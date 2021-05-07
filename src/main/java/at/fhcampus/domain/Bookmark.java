@@ -11,6 +11,23 @@ public class Bookmark {
 
     private int rating;
 
+    private boolean secure;
+
+    public Bookmark(String url) {
+        this.url = url;
+        this.rating = 1;
+        secure = url.startsWith("https");
+    }
+
+    public Bookmark(String url, String tag) {
+        this.url = url;
+        this.tags.add(tag);
+        secure = url.startsWith("https");
+        this.rating = 1;
+    }
+
+
+
     public String getUrl() {
         return url;
     }
@@ -35,15 +52,12 @@ public class Bookmark {
         this.rating = rating;
     }
 
-    public Bookmark(String url) {
-        this.url = url;
+    public boolean isSecure() {
+        return secure;
     }
 
-    public Bookmark(String url, String tag) {
-        this.url = url;
-        this.tags.add(tag);
-
-
+    public void setSecure(boolean secure) {
+        this.secure = secure;
     }
 
     @Override

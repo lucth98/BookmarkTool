@@ -19,7 +19,17 @@ public class BookmarkManager {
     }
 
     public void addBookmark(String url){
-        bookmarkArrayList.add(new Bookmark(url));
+        if (validateURL(url)) {
+            for (Bookmark bookmark : bookmarkArrayList) {
+                if (bookmark.getUrl().equalsIgnoreCase(url)) {
+                    bookmark.setRating(bookmark.getRating() + 1);
+                    return;
+                }
+            }
+            bookmarkArrayList.add(new Bookmark(url));
+        }
+        else
+            throw new IllegalArgumentException("URL is not valid!");
     }
 
     public void addTagToBookmark(String url ,String tag){
@@ -30,10 +40,6 @@ public class BookmarkManager {
         }
     }
 
-    public int getNumbersOfSecureURL(){
-        return 0;
-    }
-
     static public boolean validateURL(String url){
         try {
             new URL(url).toURI();
@@ -41,6 +47,10 @@ public class BookmarkManager {
         } catch (MalformedURLException | URISyntaxException e) {
             return false;
         }
+    }
+
+    public int getNumbersOfSecureURL(){
+        return 0;
     }
 
     public List<Bookmark> filterByTags(List<String> tags){
