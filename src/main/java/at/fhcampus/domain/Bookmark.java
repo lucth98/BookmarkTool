@@ -1,6 +1,7 @@
 package at.fhcampus.domain;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Bookmark {
 
@@ -43,5 +44,27 @@ public class Bookmark {
         this.tags.add(tag);
 
 
+    }
+
+    @Override
+    public String toString() {
+        return "Bookmark{" +
+                "url='" + url + '\'' +
+                ", tags=" + tags +
+                ", rating=" + rating +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Bookmark bookmark = (Bookmark) o;
+        return rating == bookmark.rating && Objects.equals(url, bookmark.url) && Objects.equals(tags, bookmark.tags);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(url, tags, rating);
     }
 }

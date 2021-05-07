@@ -16,11 +16,15 @@ public class BookmarkManager {
     }
 
     public void addBookmark(String url){
-
+        bookmarkArrayList.add(new Bookmark(url));
     }
 
-    public void addTagToBookmark(){
-
+    public void addTagToBookmark(String url ,String tag){
+        for (Bookmark bookmark:bookmarkArrayList) {
+            if(bookmark.getUrl().equalsIgnoreCase(url)){
+                bookmark.getTags().add(tag);
+            }
+        }
     }
 
     public int getNumbersOfSecureURL(){
