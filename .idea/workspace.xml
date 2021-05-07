@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ main methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620392089482</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="+ tests">
+      <created>1620394102673</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620394102674</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +170,7 @@
     <MESSAGE value="+test bookmark" />
     <MESSAGE value="+ bookmark manager" />
     <MESSAGE value="+ main methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ main methods" />
+    <MESSAGE value="+ tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ tests" />
   </component>
 </project>
