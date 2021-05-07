@@ -1,31 +1,27 @@
 package at.fhcampus.domain;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Bookmark {
 
     private String url;
-
-    private ArrayList<String> tags=new ArrayList<String>();
-
+    private List<String> tags;
     private int rating;
-
     private boolean secure;
 
     public Bookmark(String url) {
         this.url = url;
         this.rating = 1;
+        tags = new ArrayList<>();
         secure = url.startsWith("https");
     }
 
     public Bookmark(String url, String tag) {
-        this.url = url;
+        this(url);
         this.tags.add(tag);
-        secure = url.startsWith("https");
-        this.rating = 1;
     }
-
 
 
     public String getUrl() {
@@ -36,7 +32,7 @@ public class Bookmark {
         this.url = url;
     }
 
-    public ArrayList<String> getTags() {
+    public List<String> getTags() {
         return tags;
     }
 
