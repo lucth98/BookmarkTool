@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BookmarkTool" />
+        <module name="BookmarkTool_V2" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="BookmarkTool" options="-Xlint:all" />
+      <module name="BookmarkTool_V2" options="-Xlint:all" />
     </option>
   </component>
 </project>

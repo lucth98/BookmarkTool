@@ -1,5 +1,8 @@
 package at.fhcampus.domain;
 
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +35,12 @@ public class BookmarkManager {
     }
 
     static public boolean validateURL(String url){
-        return  false;
+        try {
+            new URL(url).toURI();
+            return true;
+        } catch (MalformedURLException | URISyntaxException e) {
+            return false;
+        }
     }
 
     public List<Bookmark> filterByTags(List<String> tags){

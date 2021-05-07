@@ -47,5 +47,28 @@ class BookmarkManagerTest {
         assertIterableEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void ensureUrlIsValid() {
+        // Arrange
+        String url = "http://test.com/Test";
+        // Act
+        boolean actualResult = BookmarkManager.validateURL(url);
+
+        // Assert
+        assertTrue(actualResult);
+    }
+
+    @Test
+    public void ensureUrlIsInValid() {
+        // Arrange
+        String url = "http/test.com/Test";
+        // Act
+        boolean actualResult = BookmarkManager.validateURL(url);
+
+        // Assert
+        assertFalse(actualResult);
+    }
+
+
 
 }
