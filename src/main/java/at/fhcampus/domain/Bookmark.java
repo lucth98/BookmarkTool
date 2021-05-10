@@ -1,20 +1,20 @@
 package at.fhcampus.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Bookmark {
 
     private String url;
     private List<String> tags;
+    private Set<Bookmark> associates;
     private int rating;
     private boolean secure;
 
     public Bookmark(String url) {
-        this.url = url;
+        this.url = url.toLowerCase();
         this.rating = 1;
         tags = new ArrayList<>();
+        associates = new LinkedHashSet<>();
         secure = url.startsWith("https");
     }
 
@@ -36,7 +36,7 @@ public class Bookmark {
         return tags;
     }
 
-    public void setTags(ArrayList<String> tags) {
+    public void setTags(List<String> tags) {
         this.tags = tags;
     }
 
@@ -54,6 +54,14 @@ public class Bookmark {
 
     public void setSecure(boolean secure) {
         this.secure = secure;
+    }
+
+    public Set<Bookmark> getAssociates() {
+        return associates;
+    }
+
+    public void setAssociates(Set<Bookmark> associates) {
+        this.associates = associates;
     }
 
     @Override

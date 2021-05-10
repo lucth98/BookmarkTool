@@ -7,6 +7,8 @@
     <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +65,21 @@
       <recent name="at.fhcampus.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureRatingIsIncreased">
-    <configuration name="BookmarkManagerTest.ensureRatingIsIncreased" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest">
+    <configuration name="BookmarkManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManager" />
+      <module name="BookmarkTool_V2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookmarkManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
@@ -74,44 +89,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="METHOD_NAME" value="ensureRatingIsIncreased" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookmarkManagerTest.ensureThatUserCantAddBookmarkWithInValidURL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool_V2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="METHOD_NAME" value="ensureThatUserCantAddBookmarkWithInValidURL" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookmarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool_V2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkTest.ensureUrlIsInSecure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookmarkManagerTest.ensureAddingMultipleBookmarksWithAssociates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
@@ -120,14 +103,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
-      <option name="METHOD_NAME" value="ensureUrlIsInSecure" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureAddingMultipleBookmarksWithAssociates" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkTest.ensureUrlIsSecure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookmarkManagerTest.ensureDomainCanBeExtracted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +119,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
-      <option name="METHOD_NAME" value="ensureUrlIsSecure" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureDomainCanBeExtracted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookmarkManagerTest.ensureThatUserCanAddBookmark" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool_V2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureThatUserCanAddBookmark" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureRatingIsIncreased" />
-        <item itemvalue="JUnit.BookmarkTest.ensureUrlIsInSecure" />
-        <item itemvalue="JUnit.BookmarkTest.ensureUrlIsSecure" />
-        <item itemvalue="JUnit.BookmarkTest" />
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatUserCantAddBookmarkWithInValidURL" />
+        <item itemvalue="JUnit.BookmarkManagerTest" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatUserCanAddBookmark" />
+        <item itemvalue="Application.BookmarkManager" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanBeExtracted" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureAddingMultipleBookmarksWithAssociates" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
-      <workItem from="1620394519643" duration="3773000" />
+      <workItem from="1620394519643" duration="25593000" />
     </task>
     <task id="LOCAL-00001" summary="+test directory">
       <created>1620298504947</created>
@@ -215,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620396964788</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Bookmark constructor refactor">
+      <created>1620405410625</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620405410625</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,40 +248,69 @@
     <MESSAGE value="+ tests" />
     <MESSAGE value="url validation + test" />
     <MESSAGE value="secure urls and rating increase + tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="secure urls and rating increase + tests" />
+    <MESSAGE value="Bookmark constructor refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bookmark constructor refactor" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1620395350268">
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1620524143708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1620395350268" />
-    <state x="527" y="114" key="CommitChangelistDialog2" timestamp="1620405317582">
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1620524143708" />
+    <state x="625" y="103" key="CommitChangelistDialog2" timestamp="1620405409475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="527" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1620405317582" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1620396860900">
+    <state x="625" y="103" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1620405409475" />
+    <state width="621" height="466" key="DebuggerActiveHint" timestamp="1620521732151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620396860900" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1620396860900">
+    <state width="621" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1620521732151" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1620608274080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620396860900" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1620396860899">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620608274080" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1620608274080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620396860899" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1620396860900">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620608274080" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1620608274079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620396860900" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1620396966655">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620608274079" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1620608274080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620396966655" />
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620405303722">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620608274080" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1620608274082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620405303721" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1620608274082" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1620608274081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1620608274081" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1620608274081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1620608274081" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1620608274081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1620608274081" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1620405412972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620405412972" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1620682016866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620682016866" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620409438825">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620409438825" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1620438060926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1620438060926" />
   </component>
 </project>

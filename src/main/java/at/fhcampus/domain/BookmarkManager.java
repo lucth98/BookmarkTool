@@ -1,24 +1,22 @@
 package at.fhcampus.domain;
 
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
 
 public class BookmarkManager {
 
- private ArrayList<Bookmark> bookmarkArrayList=new ArrayList<>();
+ private List<Bookmark> bookmarkArrayList = new ArrayList<>();
 
-    public ArrayList<Bookmark> getBookmarkArrayList() {
-        return bookmarkArrayList;
-    }
-
-    public void setBookmarkArrayList(ArrayList<Bookmark> bookmarkArrayList) {
-        this.bookmarkArrayList = bookmarkArrayList;
-    }
 
     public void addBookmark(String url){
+        if (url == null)
+            throw new IllegalArgumentException("Url can't be null"); //to test
+        url = url.toLowerCase();
         if (validateURL(url)) {
             for (Bookmark bookmark : bookmarkArrayList) {
                 if (bookmark.getUrl().equalsIgnoreCase(url)) {
@@ -26,7 +24,9 @@ public class BookmarkManager {
                     return;
                 }
             }
-            bookmarkArrayList.add(new Bookmark(url));
+            Bookmark bookmark = new Bookmark(url);
+            bookmarkArrayList.add(bookmark);
+            addAssociates(bookmark);
         }
         else
             throw new IllegalArgumentException("URL is not valid!");
@@ -50,20 +50,53 @@ public class BookmarkManager {
     }
 
     public int getNumbersOfSecureURL(){
-        return 0;
+        return (int) bookmarkArrayList.stream()
+                .filter(Bookmark::isSecure)
+                .count();
     }
 
     public List<Bookmark> filterByTags(List<String> tags){
+        return   bookmarkArrayList.stream()
+                .flatMap(bookmark ->
+                            bookmark.getTags().stream()
+                                    .map(tag -> {
+                                        if (tags.contains(tag))
+                                            return bookmark;
+                                        return null;
+                                    }))
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+    }
 
+    public String getDomainName(String url){
+        try {
+            URI uri = new URI(url);
+            String domain = uri.getHost();
+            return domain.startsWith("www.") ? domain.substring(4) : domain;
+        } catch (URISyntaxException e) {
+            System.out.println(e.getMessage());
+        }
         return null;
     }
 
+    public void addAssociates(Bookmark bookmark) {
+        String bookmarkDomain = getDomainName(bookmark.getUrl());
+        if (bookmarkDomain == null) return;
+        bookmarkArrayList.stream()
+                .filter(element -> getDomainName(element.getUrl()).equalsIgnoreCase(bookmarkDomain) && !bookmark.equals(element))
+                .forEach(element -> {
+                    element.getAssociates().add(bookmark);
+                    bookmark.getAssociates().add(element);
+                });
+    }
 
 
+    public List<Bookmark> getBookmarkArrayList() {
+        return bookmarkArrayList;
+    }
 
-
-
-
-
+    public void setBookmarkArrayList(List<Bookmark> bookmarkArrayList) {
+        this.bookmarkArrayList = bookmarkArrayList;
+    }
 
 }
