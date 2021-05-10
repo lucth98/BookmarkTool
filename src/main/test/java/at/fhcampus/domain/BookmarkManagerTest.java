@@ -78,7 +78,6 @@ class BookmarkManagerTest {
         String url = "http://test.com/Test";
         // Act
         boolean actualResult = BookmarkManager.validateURL(url);
-
         // Assert
         assertTrue(actualResult);
     }
@@ -89,7 +88,6 @@ class BookmarkManagerTest {
         String url = "http/test.com/Test";
         // Act
         boolean actualResult = BookmarkManager.validateURL(url);
-
         // Assert
         assertFalse(actualResult);
     }

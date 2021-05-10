@@ -10,10 +10,10 @@ import java.util.stream.Collectors;
 
 public class BookmarkManager {
 
- private List<Bookmark> bookmarkArrayList = new ArrayList<>();
+    private List<Bookmark> bookmarkArrayList = new ArrayList<>();
 
 
-    public void addBookmark(String url){
+    public void addBookmark(String url) {
         if (url == null)
             throw new IllegalArgumentException("Url can't be null"); //to test
         url = url.toLowerCase();
@@ -27,20 +27,19 @@ public class BookmarkManager {
             Bookmark bookmark = new Bookmark(url);
             bookmarkArrayList.add(bookmark);
             addAssociates(bookmark);
-        }
-        else
+        } else
             throw new IllegalArgumentException("URL is not valid!");
     }
 
-    public void addTagToBookmark(String url ,String tag){
-        for (Bookmark bookmark:bookmarkArrayList) {
-            if(bookmark.getUrl().equalsIgnoreCase(url)){
+    public void addTagToBookmark(String url, String tag) {
+        for (Bookmark bookmark : bookmarkArrayList) {
+            if (bookmark.getUrl().equalsIgnoreCase(url)) {
                 bookmark.getTags().add(tag);
             }
         }
     }
 
-    static public boolean validateURL(String url){
+    static public boolean validateURL(String url) {
         try {
             new URL(url).toURI();
             return true;
@@ -49,26 +48,26 @@ public class BookmarkManager {
         }
     }
 
-    public int getNumbersOfSecureURL(){
+    public int getNumbersOfSecureURL() {
         return (int) bookmarkArrayList.stream()
                 .filter(Bookmark::isSecure)
                 .count();
     }
 
-    public List<Bookmark> filterByTags(List<String> tags){
-        return   bookmarkArrayList.stream()
+    public List<Bookmark> filterByTags(List<String> tags) {
+        return bookmarkArrayList.stream()
                 .flatMap(bookmark ->
-                            bookmark.getTags().stream()
-                                    .map(tag -> {
-                                        if (tags.contains(tag))
-                                            return bookmark;
-                                        return null;
-                                    }))
+                        bookmark.getTags().stream()
+                                .map(tag -> {
+                                    if (tags.contains(tag))
+                                        return bookmark;
+                                    return null;
+                                }))
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
     }
 
-    public String getDomainName(String url){
+    public String getDomainName(String url) {
         try {
             URI uri = new URI(url);
             String domain = uri.getHost();
@@ -81,7 +80,7 @@ public class BookmarkManager {
 
     public void addAssociates(Bookmark bookmark) {
         String bookmarkDomain = getDomainName(bookmark.getUrl());
-        if (bookmarkDomain == null) return;
+        if (bookmarkDomain != null)
         bookmarkArrayList.stream()
                 .filter(element -> getDomainName(element.getUrl()).equalsIgnoreCase(bookmarkDomain) && !bookmark.equals(element))
                 .forEach(element -> {
