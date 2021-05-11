@@ -227,12 +227,8 @@ class BookmarkManagerTest {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
 
-
         String url1 = "http://test.com/Test/java";
         String url2 = "https://test.com/Test/programming";
-//        String url3 = "https://test.com/Test";
-//        String url4 = "https://test1test.com/Test";
-//        String url5 = "https://test998.com/Test";
 
         Bookmark bookmark1=new Bookmark(url1);
         Bookmark bookmark2=new Bookmark(url2);
@@ -245,28 +241,14 @@ class BookmarkManagerTest {
 
         expectedResult.add(bookmark2);
 
-
-//        bookmarkManager.addBookmark(url1);
-//        bookmarkManager.addBookmark(url2);
-//        bookmarkManager.addBookmark(url3);
-//        bookmarkManager.addBookmark(url4);
-//        bookmarkManager.addBookmark(url5);
-
         //Act
         bookmarkManager.addAssociates(bookmark1);
 
         actualResult=bookmark1.getAssociates();
 
-        //List<Bookmark> bookmarks = bookmarkManager.getBookmarkArrayList();
-
-
-
-      //  bookmarks.forEach(element -> System.out.println(element.toString() +"\n"+  element.getAssociates().toString() + "\n\n\n"));
         // Assert
 
         assertIterableEquals(expectedResult,actualResult);
-
-
     }
 
 }
