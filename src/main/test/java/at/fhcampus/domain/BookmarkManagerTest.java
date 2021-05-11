@@ -226,25 +226,46 @@ class BookmarkManagerTest {
     public void ensureAddingMultipleBookmarksWithAssociates() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
+
+
         String url1 = "http://test.com/Test/java";
         String url2 = "https://test.com/Test/programming";
-        String url3 = "https://test.com/Test";
-        String url4 = "https://test1test.com/Test";
-        String url5 = "https://test998.com/Test";
+//        String url3 = "https://test.com/Test";
+//        String url4 = "https://test1test.com/Test";
+//        String url5 = "https://test998.com/Test";
+
+        Bookmark bookmark1=new Bookmark(url1);
+        Bookmark bookmark2=new Bookmark(url2);
+
+        bookmarkManager.getBookmarkArrayList().add(bookmark1);
+        bookmarkManager.getBookmarkArrayList().add(bookmark2);
+
+        Set<Bookmark> expectedResult= new LinkedHashSet<>();
+        Set<Bookmark> actualResult =new LinkedHashSet<>();
+
+        expectedResult.add(bookmark2);
+
+
+//        bookmarkManager.addBookmark(url1);
+//        bookmarkManager.addBookmark(url2);
+//        bookmarkManager.addBookmark(url3);
+//        bookmarkManager.addBookmark(url4);
+//        bookmarkManager.addBookmark(url5);
 
         //Act
-        bookmarkManager.addBookmark(url1);
-        bookmarkManager.addBookmark(url2);
-        bookmarkManager.addBookmark(url3);
-        bookmarkManager.addBookmark(url4);
-        bookmarkManager.addBookmark(url5);
+        bookmarkManager.addAssociates(bookmark1);
 
-        List<Bookmark> bookmarks = bookmarkManager.getBookmarkArrayList();
+        actualResult=bookmark1.getAssociates();
+
+        //List<Bookmark> bookmarks = bookmarkManager.getBookmarkArrayList();
 
 
 
-        bookmarks.forEach(element -> System.out.println(element +"\n"+  element.getAssociates() + "\n\n\n"));
+      //  bookmarks.forEach(element -> System.out.println(element.toString() +"\n"+  element.getAssociates().toString() + "\n\n\n"));
         // Assert
+
+        assertIterableEquals(expectedResult,actualResult);
+
 
     }
 
