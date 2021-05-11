@@ -18,6 +18,9 @@ public class BookmarkManager {
             throw new IllegalArgumentException("Url can't be null"); //to test
         url = url.toLowerCase();
         if (validateURL(url)) {
+
+
+
             for (Bookmark bookmark : bookmarkArrayList) {
                 if (bookmark.getUrl().equalsIgnoreCase(url)) {
                     bookmark.setRating(bookmark.getRating() + 1);
@@ -32,11 +35,15 @@ public class BookmarkManager {
     }
 
     public void addTagToBookmark(String url, String tag) {
-        for (Bookmark bookmark : bookmarkArrayList) {
+        bookmarkArrayList.forEach(bookmark -> {   if (bookmark.getUrl().equalsIgnoreCase(url)) {
+            bookmark.getTags().add(tag);
+        }});
+
+        /*for (Bookmark bookmark : bookmarkArrayList) {
             if (bookmark.getUrl().equalsIgnoreCase(url)) {
                 bookmark.getTags().add(tag);
             }
-        }
+        }*/
     }
 
     static public boolean validateURL(String url) {
