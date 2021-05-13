@@ -72,14 +72,17 @@ public class BookmarkManager {
     }
 
     public String getDomainName(String url) {
+        String returnValue="";
         try {
             URI uri = new URI(url);
             String domain = uri.getHost();
-            return domain.startsWith("www.") ? domain.substring(4) : domain;
-        } catch (URISyntaxException e) {
-            System.out.println(e.getMessage());
+             returnValue=domain.startsWith("www.") ? domain.substring(4) : domain;
+           // return returnValue;
+        }catch (Exception e){
+         //   System.out.println(e.getMessage());
+            returnValue=null;
         }
-        return null;
+        return returnValue;
     }
 
     public void addAssociates(Bookmark bookmark) {

@@ -26,6 +26,20 @@ class BookmarkManagerTest {
     }
 
     @Test
+    public void ensureThatUserCantAddBookmarkWithNullURL() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+
+        String url = null;
+
+        // Act & Assert
+
+        IllegalArgumentException illegalArgumentException = assertThrows(IllegalArgumentException.class, () -> {
+            bookmarkManager.addBookmark(url);
+        });
+    }
+
+    @Test
     public void ensureThatUserCanAddBookmarkWithValidURL() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
@@ -113,7 +127,7 @@ class BookmarkManagerTest {
     @Test
     public void ensureFilteringByKeyword() {
         //Arrange
-        List<String> tags  = Arrays.asList("test", "java", "sport");
+        List<String> tags = Arrays.asList("test", "java", "sport");
         String url1 = "https://url1test.com";
         String url2 = "https://url2health.com";
         String url3 = "https://url3sport.com";
@@ -160,6 +174,17 @@ class BookmarkManagerTest {
 
     }
 
+    @Test
+    public void ensureDomainCanNotBeExtracted() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url1 = "BlaBla";
+        // Act
+        String actualResult = bookmarkManager.getDomainName(url1);
+        // Assert
+        assertNull(actualResult);
+    }
+
 
     @Test
     public void ensureSecureUrlsCountIsFour() {
@@ -196,11 +221,11 @@ class BookmarkManagerTest {
         String url4 = "https://test1test.com/Test";
         String url5 = "https://test998.com/Test";
         List<Bookmark> list = new ArrayList<>();
-        Bookmark bookmark1 =new Bookmark(url1);
-        Bookmark bookmark2 =new Bookmark(url2);
-        Bookmark bookmark3 =new Bookmark(url3);
-        Bookmark bookmark4 =new Bookmark(url4);
-        Bookmark bookmark5 =new Bookmark(url5);
+        Bookmark bookmark1 = new Bookmark(url1);
+        Bookmark bookmark2 = new Bookmark(url2);
+        Bookmark bookmark3 = new Bookmark(url3);
+        Bookmark bookmark4 = new Bookmark(url4);
+        Bookmark bookmark5 = new Bookmark(url5);
         list.add(bookmark1);
         list.add(bookmark2);
         list.add(bookmark3);
@@ -221,6 +246,41 @@ class BookmarkManagerTest {
         assertIterableEquals(expectedResult, actualResult);
 
     }
+    @Test
+    public void ensureBookmarkHasnotAssociates() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url1 = "http://test.com/Test/java";
+        String url2 = "https://test.com/Test/programming";
+        String url3 = "https://test.com/Test";
+        String url4 = "https://test1test.com/Test";
+        String url5 = "https://test998.com/Test";
+        List<Bookmark> list = new ArrayList<>();
+        Bookmark bookmark1 = new Bookmark();
+        bookmark1.setUrl(null);
+        Bookmark bookmark2 = new Bookmark(url2);
+        Bookmark bookmark3 = new Bookmark(url3);
+        Bookmark bookmark4 = new Bookmark(url4);
+        Bookmark bookmark5 = new Bookmark(url5);
+        list.add(bookmark1);
+        list.add(bookmark2);
+        list.add(bookmark3);
+        list.add(bookmark4);
+        list.add(bookmark5);
+        bookmarkManager.setBookmarkArrayList(list);
+
+        Set<Bookmark> expectedResult = new LinkedHashSet<>();
+
+        // Act
+        bookmarkManager.addAssociates(bookmark1);
+        Set<Bookmark> actualResult = bookmark1.getAssociates();
+
+        System.out.println(expectedResult);
+        System.out.println(actualResult);
+        // Assert
+        assertNull(actualResult);
+
+    }
 
     @Test
     public void ensureAddingMultipleBookmarksWithAssociates() {
@@ -230,25 +290,60 @@ class BookmarkManagerTest {
         String url1 = "http://test.com/Test/java";
         String url2 = "https://test.com/Test/programming";
 
-        Bookmark bookmark1=new Bookmark(url1);
-        Bookmark bookmark2=new Bookmark(url2);
+        Bookmark bookmark1 = new Bookmark(url1);
+        Bookmark bookmark2 = new Bookmark(url2);
 
         bookmarkManager.getBookmarkArrayList().add(bookmark1);
         bookmarkManager.getBookmarkArrayList().add(bookmark2);
 
-        Set<Bookmark> expectedResult= new LinkedHashSet<>();
-        Set<Bookmark> actualResult =new LinkedHashSet<>();
+        Set<Bookmark> expectedResult = new LinkedHashSet<>();
+        Set<Bookmark> actualResult = new LinkedHashSet<>();
 
         expectedResult.add(bookmark2);
 
         //Act
         bookmarkManager.addAssociates(bookmark1);
 
-        actualResult=bookmark1.getAssociates();
+        actualResult = bookmark1.getAssociates();
 
         // Assert
 
-        assertIterableEquals(expectedResult,actualResult);
+        assertIterableEquals(expectedResult, actualResult);
+    }
+
+
+
+
+    @Test
+    public void ensureAddingMultipleBookmarksWithAssociatesinAddBookmark() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+
+        String url1 = "http://test.com/Test/java";
+        String url2 = "https://test.com/Test/programming";
+
+        Bookmark bookmark1 = new Bookmark(url1);
+        //Bookmark bookmark2 = new Bookmark(url2);
+
+        bookmarkManager.getBookmarkArrayList().add(bookmark1);
+      //  bookmarkManager.getBookmarkArrayList().add(bookmark2);
+
+        Set<Bookmark> expectedResult = new LinkedHashSet<>();
+        Set<Bookmark> actualResult = new LinkedHashSet<>();
+
+
+
+        //Act
+       bookmarkManager.addBookmark(url2);
+        expectedResult.add(bookmarkManager.getBookmarkArrayList().get(1));
+
+
+
+        actualResult = bookmark1.getAssociates();
+
+        // Assert
+
+        assertIterableEquals(expectedResult, actualResult);
     }
 
 }

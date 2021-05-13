@@ -4,11 +4,16 @@ import java.util.*;
 
 public class Bookmark {
 
+
+
     private String url;
     private List<String> tags;
     private Set<Bookmark> associates;
     private int rating;
     private boolean secure;
+
+    public Bookmark() {
+    }
 
     public Bookmark(String url) {
         this.url = url.toLowerCase();
@@ -65,24 +70,11 @@ public class Bookmark {
     }
 
     @Override
-    public String toString() {
-        return "Bookmark{" +
-                "url='" + url + '\'' +
-                ", tags=" + tags +
-                ", rating=" + rating +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Bookmark bookmark = (Bookmark) o;
-        return rating == bookmark.rating && Objects.equals(url, bookmark.url) && Objects.equals(tags, bookmark.tags);
+        return rating == bookmark.rating && secure == bookmark.secure && url.equals(bookmark.url) && tags.equals(bookmark.tags) && associates.equals(bookmark.associates);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(url, tags, rating);
-    }
 }
