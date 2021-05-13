@@ -57,24 +57,9 @@
       <recent name="at.fhcampus.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureAddingMultipleBookmarksWithAssociates">
+  <component name="RunManager" selected="JUnit.BookmarkTest">
     <configuration name="BookmarkManagerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookmarkManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="at.fhcampus.domain.*" />
@@ -120,6 +105,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookmarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookmarkTest.ensureUrlIsSecure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -138,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkTest" />
+        <item itemvalue="JUnit.BookmarkManagerTest (1)" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureAddingMultipleBookmarksWithAssociates" />
         <item itemvalue="JUnit.BookmarkTest.ensureUrlIsSecure" />
-        <item itemvalue="JUnit.BookmarkManagerTest (1)" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatUserCanAddBookmark (1)" />
-        <item itemvalue="JUnit.BookmarkManagerTest" />
       </list>
     </recent_temporary>
   </component>
