@@ -356,13 +356,41 @@ class BookmarkManagerTest {
         String url1 = "http://test.com/Test/java";
         LocalDateTime expectedResult=LocalDateTime.now();
         LocalDateTime actualResult;
+       int expectedMo=expectedResult.getMonthValue();
+       int expectedD=expectedResult.getDayOfMonth();
+       int expecteY=expectedResult.getYear();
 
+       int expectedH=expectedResult.getHour();
+       int expectedMi=expectedResult.getMinute();
+
+
+        int actualMo;
+        int actualD;
+        int actualY;
+
+        int actualH;
+        int actualMi;
         //Act
         bookmarkManager.addBookmark(url1);
         actualResult=bookmarkManager.getBookmarkArrayList().get(0).getAddingTime();
 
+
+         actualMo=actualResult.getMonthValue();
+         actualD=actualResult.getDayOfMonth();
+         actualY=actualResult.getYear();
+
+         actualH=actualResult.getHour();
+         actualMi=actualResult.getMinute();
+
+
+
+
         // Assert
-        assertEquals(expectedResult,actualResult);
+        assertEquals(expectedD,actualD);
+        assertEquals(expectedH,actualH);
+        assertEquals(expectedMi,actualMi);
+        assertEquals(expectedMo,actualMo);
+        assertEquals(expecteY,actualY);
 
     }
 

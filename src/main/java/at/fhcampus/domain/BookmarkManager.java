@@ -4,6 +4,9 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
@@ -25,6 +28,13 @@ public class BookmarkManager {
                 }
             }
             Bookmark bookmark = new Bookmark(url);
+            /*DateTimeFormatter dateTimeFormatter =DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            LocalDateTime localDateTime= LocalDateTime.now().format(dateTimeFormatter.withLocale());
+
+
+            localDateTime.*/
+
+            bookmark.setAddingTime(LocalDateTime.now());
             bookmarkArrayList.add(bookmark);
             addAssociates(bookmark);
         } else
