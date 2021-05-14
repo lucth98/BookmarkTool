@@ -72,7 +72,7 @@ public class BookmarkManager {
     }
 
     public String getDomainName(String url) {
-        String returnValue="";
+        String returnValue=null;
         try {
             URI uri = new URI(url);
             String domain = uri.getHost();
@@ -80,7 +80,7 @@ public class BookmarkManager {
            // return returnValue;
         }catch (Exception e){
          //   System.out.println(e.getMessage());
-            returnValue=null;
+           // returnValue=null;
         }
         return returnValue;
     }

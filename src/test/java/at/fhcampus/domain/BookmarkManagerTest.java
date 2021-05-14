@@ -2,6 +2,7 @@ package at.fhcampus.domain;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -344,6 +345,24 @@ class BookmarkManagerTest {
         // Assert
 
         assertIterableEquals(expectedResult, actualResult);
+    }
+
+
+    @Test
+    public void ensureThatCurrentDateIsAdded(){
+        // Arrange
+        BookmarkManager bookmarkManager=new BookmarkManager();
+        String url1 = "http://test.com/Test/java";
+        LocalDate expectedResult=LocalDate.now();
+        LocalDate actualResult;
+
+        //Act
+        bookmarkManager.addBookmark(url1);
+        actualResult=bookmarkManager.getBookmarkArrayList().get(0).getAddingTime();
+
+        // Assert
+        assertEquals(expectedResult,actualResult);
+
     }
 
 }
