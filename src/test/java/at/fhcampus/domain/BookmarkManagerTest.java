@@ -3,6 +3,7 @@ package at.fhcampus.domain;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -353,8 +354,8 @@ class BookmarkManagerTest {
         // Arrange
         BookmarkManager bookmarkManager=new BookmarkManager();
         String url1 = "http://test.com/Test/java";
-        LocalDate expectedResult=LocalDate.now();
-        LocalDate actualResult;
+        LocalDateTime expectedResult=LocalDateTime.now();
+        LocalDateTime actualResult;
 
         //Act
         bookmarkManager.addBookmark(url1);

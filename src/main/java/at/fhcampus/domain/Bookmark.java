@@ -1,6 +1,7 @@
 package at.fhcampus.domain;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class Bookmark {
@@ -11,7 +12,8 @@ public class Bookmark {
     private Set<Bookmark> associates;
     private int rating;
     private boolean secure;
-    private LocalDate addingTime;
+
+    private LocalDateTime addingTime;
 
 
 
@@ -32,11 +34,11 @@ public class Bookmark {
         this.tags.add(tag);
     }
 
-    public LocalDate getAddingTime() {
+    public LocalDateTime getAddingTime() {
         return addingTime;
     }
 
-    public void setAddingTime(LocalDate addingTime) {
+    public void setAddingTime(LocalDateTime addingTime) {
         this.addingTime = addingTime;
     }
 
