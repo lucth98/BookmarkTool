@@ -408,12 +408,9 @@ class BookmarkManagerTest {
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<String> expectedResult = new ArrayList<>();
-
-
         // Act
         bookmarkManager.removeTagFromBookmark(url,tag);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
-
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }

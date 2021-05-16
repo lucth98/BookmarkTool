@@ -116,8 +116,15 @@ public class BookmarkManager {
     }
 
     public void removeTagFromBookmark(String url,String tag) {
-
-
+        for (Bookmark bookmark:bookmarkArrayList) {
+            if(bookmark.getUrl().equalsIgnoreCase(url)){
+               for (int i=0;i<bookmark.getTags().size();i++){
+                    if(bookmark.getTags().get(i).equalsIgnoreCase(tag)){
+                        bookmark.getTags().remove(i);
+                    }
+               }
+            }
+        }
 
     }
 }
