@@ -411,7 +411,7 @@ class BookmarkManagerTest {
 
 
         // Act
-        bookmarkManager.removeTagFromBookmark(url);
+        bookmarkManager.removeTagFromBookmark(url,tag);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
 
         // Assert

@@ -115,6 +115,9 @@ public class BookmarkManager {
         this.bookmarkArrayList = bookmarkArrayList;
     }
 
-    public void removeTagFromBookmark(String url) {
+    public void removeTagFromBookmark(String url,String tag) {
+
+
+
     }
 }
