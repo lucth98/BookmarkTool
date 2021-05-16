@@ -394,4 +394,27 @@ class BookmarkManagerTest {
 
     }
 
+
+    @Test
+    public void ensureThatTakCanBeRemoved(){
+
+    }
+
+
+    @Test
+    public void ensureThatTakCanTBeRemoved(){
+
+    }
+
+
+    @Test
+    public void ensureThatBookmarkCanBeRemoved(){
+
+    }
+
+
+    @Test
+    public void ensureThatBookmarkCanTBeRemoved(){
+
+    }
 }
