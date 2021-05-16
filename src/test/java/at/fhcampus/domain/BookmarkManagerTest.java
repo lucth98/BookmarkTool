@@ -397,7 +397,25 @@ class BookmarkManagerTest {
 
     @Test
     public void ensureThatTakCanBeRemoved(){
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/Test";
+        String tag = "test";
+        List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
+        Bookmark bookmark = new Bookmark(url,tag);
 
+        bookmarkArrayList.add(bookmark);
+        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
+
+        List<String> expectedResult = new ArrayList<>();
+
+
+        // Act
+        bookmarkManager.removeTagFromBookmark(url);
+        List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
+
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
     }
 
 
