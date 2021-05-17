@@ -127,4 +127,10 @@ public class BookmarkManager {
         }
 
     }
+
+    public void removeBookmark(String url) {
+
+
+
+    }
 }

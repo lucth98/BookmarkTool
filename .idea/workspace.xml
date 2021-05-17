@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ removeTagFromBookmark">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ ensureThatTakCanTBeRemoved">
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +68,8 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatTakCanTBeRemoved">
-    <configuration name="BookmarkManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatBookmarkCanBeRemoved">
+    <configuration name="BookmarkManagerTest.ensureThatBookmarkCanBeRemoved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +79,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkCanBeRemoved" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkCanBeRemoved" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatTakCanTBeRemoved" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatTakCanBeRemoved" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatCurrentDateIsAdded" />
         <item itemvalue="JUnit.BookmarkTest" />
-        <item itemvalue="JUnit.BookmarkManagerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621190516770</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="+ ensureThatTakCanTBeRemoved">
+      <created>1621255833188</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1621255833188</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +345,7 @@
     <MESSAGE value="+ Tests" />
     <MESSAGE value="+ Test ensureThatTakCanBeRemoved" />
     <MESSAGE value="+ removeTagFromBookmark" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ removeTagFromBookmark" />
+    <MESSAGE value="+ ensureThatTakCanTBeRemoved" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ ensureThatTakCanTBeRemoved" />
   </component>
 </project>
