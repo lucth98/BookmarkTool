@@ -480,6 +480,22 @@ class BookmarkManagerTest {
 
     @Test
     public void ensureThatBookmarkCanTBeRemoved(){
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/Test";
+        String url2 = "http://test.com/Test 2";
+        List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
+        Bookmark bookmark = new Bookmark(url);
+        bookmarkArrayList.add(bookmark);
+        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
+        List<Bookmark> expectedResult = new ArrayList<>();
+        expectedResult.add(bookmark);
+        // Act
+        bookmarkManager.removeBookmark(url2);
+
+        List<Bookmark> actualResult = bookmarkManager.getBookmarkArrayList();
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
     }
 }
