@@ -42,9 +42,11 @@ public class BookmarkManager {
     }
 
     public void addTagToBookmark(String url, String tag) {
-        bookmarkArrayList.forEach(bookmark -> {   if (bookmark.getUrl().equalsIgnoreCase(url)) {
-            bookmark.getTags().add(tag);
-        }});
+        bookmarkArrayList.forEach(bookmark -> {
+            if (bookmark.getUrl().equalsIgnoreCase(url)) {
+                bookmark.getTags().add(tag);
+            }
+        });
 
         /*for (Bookmark bookmark : bookmarkArrayList) {
             if (bookmark.getUrl().equalsIgnoreCase(url)) {
@@ -82,15 +84,15 @@ public class BookmarkManager {
     }
 
     public String getDomainName(String url) {
-        String returnValue=null;
+        String returnValue = null;
         try {
             URI uri = new URI(url);
             String domain = uri.getHost();
-             returnValue=domain.startsWith("www.") ? domain.substring(4) : domain;
-           // return returnValue;
-        }catch (Exception e){
-         //   System.out.println(e.getMessage());
-           // returnValue=null;
+            returnValue = domain.startsWith("www.") ? domain.substring(4) : domain;
+            // return returnValue;
+        } catch (Exception e) {
+            //   System.out.println(e.getMessage());
+            // returnValue=null;
         }
         return returnValue;
     }
@@ -98,12 +100,12 @@ public class BookmarkManager {
     public void addAssociates(Bookmark bookmark) {
         String bookmarkDomain = getDomainName(bookmark.getUrl());
         if (bookmarkDomain != null)
-        bookmarkArrayList.stream()
-                .filter(element -> getDomainName(element.getUrl()).equalsIgnoreCase(bookmarkDomain) && !bookmark.equals(element))
-                .forEach(element -> {
-                    element.getAssociates().add(bookmark);
-                    bookmark.getAssociates().add(element);
-                });
+            bookmarkArrayList.stream()
+                    .filter(element -> getDomainName(element.getUrl()).equalsIgnoreCase(bookmarkDomain) && !bookmark.equals(element))
+                    .forEach(element -> {
+                        element.getAssociates().add(bookmark);
+                        bookmark.getAssociates().add(element);
+                    });
     }
 
 
@@ -115,14 +117,15 @@ public class BookmarkManager {
         this.bookmarkArrayList = bookmarkArrayList;
     }
 
-    public void removeTagFromBookmark(String url,String tag) {
-        for (Bookmark bookmark:bookmarkArrayList) {
-            if(bookmark.getUrl().equalsIgnoreCase(url)){
-               for (int i=0;i<bookmark.getTags().size();i++){
+    public void removeTagFromBookmark(String url, String tag) {
+        for (Bookmark bookmark : bookmarkArrayList) {
+            if (bookmark.getUrl().equalsIgnoreCase(url)) {
+                bookmark.getTags().removeIf(currentTag -> currentTag.equalsIgnoreCase(tag));
+/*               for (int i=0;i<bookmark.getTags().size();i++){
                     if(bookmark.getTags().get(i).equalsIgnoreCase(tag)){
                         bookmark.getTags().remove(i);
                     }
-               }
+               }*/
             }
         }
 
@@ -134,11 +137,11 @@ public class BookmarkManager {
 //                bookmarkArrayList.remove(bookmark);
 //            }
 //        }
-        for (int i=0;i<bookmarkArrayList.size();i++){
+/*        for (int i=0;i<bookmarkArrayList.size();i++){
             if(bookmarkArrayList.get(i).getUrl().equalsIgnoreCase(url)){
                 bookmarkArrayList.remove(i);
           }
-        }
-
+        }*/
+        bookmarkArrayList.removeIf(currentBookmark -> currentBookmark.getUrl().equalsIgnoreCase(url));
     }
 }
