@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -361,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621295088765</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="sorting by rating tests">
+      <created>1621295262074</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1621295262075</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,17 +411,18 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="sorting by rating test case" />
     <MESSAGE value="sorting by rating implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="sorting by rating implementation" />
+    <MESSAGE value="sorting by rating tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting by rating tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="538" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1621294435335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621294435335" />
-    <state x="332" y="7" key="CommitChangelistDialog2" timestamp="1621295087017">
+    <state x="332" y="7" key="CommitChangelistDialog2" timestamp="1621295260764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="332" y="7" key="CommitChangelistDialog2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295087017" />
+    <state x="332" y="7" key="CommitChangelistDialog2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295260764" />
     <state width="1493" height="162" key="GridCell.Tab.0.bottom" timestamp="1621295245310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -430,9 +439,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="162" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295245310" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1621295091646">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1621295264651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295091646" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295264651" />
   </component>
 </project>

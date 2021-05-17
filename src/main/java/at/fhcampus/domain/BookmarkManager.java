@@ -144,9 +144,17 @@ public class BookmarkManager {
 
     public List<Bookmark> getSortedBookmarksByRating(){
         List<Bookmark> sortedList = new ArrayList<>(bookmarkArrayList);
-        sortedList.sort((bookmark1, bookmark2) ->
-                (bookmark1.getRating() < bookmark1.getRating()) ? -1 :
-                ((bookmark1.getRating() == bookmark2.getRating()) ? 0 : 1));
+        sortedList.sort(new Comparator<Bookmark>() {
+            @Override
+            public int compare(Bookmark bookmark1, Bookmark bookmark2) {
+                return (bookmark1.getRating() < bookmark1.getRating()) ? -1 :
+                        ((bookmark1.getRating() == bookmark2.getRating()) ? 0 : 1);
+            }
+        });
         return sortedList;
+    }
+
+    public List<Bookmark> getSortedBookmarksByDate(){
+        return null;
     }
 }
