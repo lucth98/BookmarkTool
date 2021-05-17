@@ -4,11 +4,8 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 public class BookmarkManager {
@@ -146,6 +143,10 @@ public class BookmarkManager {
     }
 
     public List<Bookmark> getSortedBookmarksByRating(){
-        return null;
+        List<Bookmark> sortedList = new ArrayList<>(bookmarkArrayList);
+        sortedList.sort((bookmark1, bookmark2) ->
+                (bookmark1.getRating() < bookmark1.getRating()) ? -1 :
+                ((bookmark1.getRating() == bookmark2.getRating()) ? 0 : 1));
+        return sortedList;
     }
 }

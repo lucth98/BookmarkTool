@@ -87,8 +87,15 @@ public class Bookmark {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Bookmark bookmark = (Bookmark) o;
-        return rating == bookmark.rating && secure == bookmark.secure && url.equals(bookmark.url) && tags.equals(bookmark.tags) && associates.equals(bookmark.associates);
+        return rating == bookmark.rating && secure == bookmark.secure && url.equals(bookmark.url);
     }
 
-
+    @Override
+    public String toString() {
+        return "Bookmark{" +
+                "url='" + url + '\'' +
+                ", rating=" + rating +
+                ", secure=" + secure +
+                '}';
+    }
 }
