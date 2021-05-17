@@ -417,6 +417,29 @@ class BookmarkManagerTest {
 
 
     @Test
+    public void ensureThatTakCanBeRemoved2(){
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/Test";
+        String url2 = "http://TEST.com/TEST";
+        String tag = "test";
+        String tag2 = "TEST";
+        List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
+        Bookmark bookmark = new Bookmark(url,tag);
+
+        bookmarkArrayList.add(bookmark);
+        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
+
+        List<String> expectedResult = new ArrayList<>();
+        // Act
+        bookmarkManager.removeTagFromBookmark(url2,tag2);
+        List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
+    }
+
+
+    @Test
     public void ensureThatTakCanTBeRemoved(){
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
@@ -471,6 +494,26 @@ class BookmarkManagerTest {
         List<Bookmark> expectedResult = new ArrayList<>();
         // Act
         bookmarkManager.removeBookmark(url);
+
+        List<Bookmark> actualResult = bookmarkManager.getBookmarkArrayList();
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void ensureThatBookmarkCanBeRemoved2(){
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/Test";
+        String url2 = "http://TEST.com/TEST";
+        List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
+        Bookmark bookmark = new Bookmark(url);
+        bookmarkArrayList.add(bookmark);
+        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
+
+        List<Bookmark> expectedResult = new ArrayList<>();
+        // Act
+        bookmarkManager.removeBookmark(url2);
 
         List<Bookmark> actualResult = bookmarkManager.getBookmarkArrayList();
         // Assert
