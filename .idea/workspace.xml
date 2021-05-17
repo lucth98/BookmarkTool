@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +68,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating3">
     <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool_V2" />
       <extension name="coverage">
@@ -87,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkManagerTest.ensureThatTakCanBeRemoved4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByRating2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
@@ -97,13 +95,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="METHOD_NAME" value="ensureThatTakCanBeRemoved4" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkAreSortedByRating2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkManagerTest.ensureThatTakCanBeRemoved5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByRating3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
@@ -113,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="METHOD_NAME" value="ensureThatTakCanBeRemoved5" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkAreSortedByRating3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating3" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating2" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatTakCanTBeRemoved" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatTakCanBeRemoved6" />
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatTakCanBeRemoved5" />
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatTakCanBeRemoved4" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621293455069</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="sorting by rating implementation">
+      <created>1621295088765</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1621295088765</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,36 +402,37 @@
     <MESSAGE value="+ tests" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="sorting by rating test case" />
-    <option name="LAST_COMMIT_MESSAGE" value="sorting by rating test case" />
+    <MESSAGE value="sorting by rating implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting by rating implementation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="538" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1621294435335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="538" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621294435335" />
-    <state x="332" y="7" key="CommitChangelistDialog2" timestamp="1621293452952">
+    <state x="332" y="7" key="CommitChangelistDialog2" timestamp="1621295087017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="332" y="7" key="CommitChangelistDialog2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621293452952" />
-    <state width="1493" height="304" key="GridCell.Tab.0.bottom" timestamp="1621295065264">
+    <state x="332" y="7" key="CommitChangelistDialog2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295087017" />
+    <state width="1493" height="162" key="GridCell.Tab.0.bottom" timestamp="1621295245310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="304" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295065264" />
-    <state width="1493" height="304" key="GridCell.Tab.0.center" timestamp="1621295065264">
+    <state width="1493" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295245310" />
+    <state width="1493" height="162" key="GridCell.Tab.0.center" timestamp="1621295245310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="304" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295065264" />
-    <state width="1493" height="304" key="GridCell.Tab.0.left" timestamp="1621295065264">
+    <state width="1493" height="162" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295245310" />
+    <state width="1493" height="162" key="GridCell.Tab.0.left" timestamp="1621295245310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="304" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295065264" />
-    <state width="1493" height="304" key="GridCell.Tab.0.right" timestamp="1621295065264">
+    <state width="1493" height="162" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295245310" />
+    <state width="1493" height="162" key="GridCell.Tab.0.right" timestamp="1621295245310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="304" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295065264" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1621293456797">
+    <state width="1493" height="162" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295245310" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1621295091646">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621293456797" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621295091646" />
   </component>
 </project>
