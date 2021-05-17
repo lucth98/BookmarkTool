@@ -697,4 +697,35 @@ class BookmarkManagerTest {
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void ensureThatBookmarkAreSortedByRating(){
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/test";
+        String url2 = "http://java.com";
+        String url3 = "http://testing.at";
+
+        Bookmark bookmark1 = new Bookmark(url);
+        Bookmark bookmark2 = new Bookmark(url2);
+        Bookmark bookmark3 = new Bookmark(url3);
+
+        bookmarkManager.addBookmark(url);
+        bookmarkManager.addBookmark(url);
+        bookmarkManager.addBookmark(url);
+
+        bookmarkManager.addBookmark(url2);
+        bookmarkManager.addBookmark(url2);
+
+        bookmarkManager.addBookmark(url3);
+
+        // Act
+        List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByRating();
+        List<Bookmark> expectedResult = Arrays.asList(bookmark1, bookmark2, bookmark3);
+
+
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
+    }
+
 }

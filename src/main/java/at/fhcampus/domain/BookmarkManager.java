@@ -144,4 +144,8 @@ public class BookmarkManager {
         }*/
         bookmarkArrayList.removeIf(currentBookmark -> currentBookmark.getUrl().equalsIgnoreCase(url));
     }
+
+    public List<Bookmark> getSortedBookmarksByRating(){
+        return null;
+    }
 }
