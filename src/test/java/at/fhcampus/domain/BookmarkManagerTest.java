@@ -418,8 +418,44 @@ class BookmarkManagerTest {
 
     @Test
     public void ensureThatTakCanTBeRemoved(){
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/Test";
 
+        String tag = "test";
+        String tag2 = "tst";
+        String tag3 = "tet";
+        String tag4 = "tes";
+        String tag5 = "est";
+        String tag6 = "es";
+        List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
+        Bookmark bookmark = new Bookmark(url);
+
+
+        bookmarkArrayList.add(bookmark);
+        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
+        bookmark.getTags().add(tag2);
+        bookmark.getTags().add(tag3);
+        bookmark.getTags().add(tag4);
+        bookmark.getTags().add(tag5);
+        bookmark.getTags().add(tag6);
+
+        List<String> expectedResult = new ArrayList<>();
+        expectedResult.add(tag2);
+        expectedResult.add(tag3);
+        expectedResult.add(tag4);
+        expectedResult.add(tag5);
+        expectedResult.add(tag6);
+        // Act
+        bookmarkManager.removeTagFromBookmark(url,tag);
+        List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
+        // Assert
+        System.out.println(actualResult);
+        System.out.println(expectedResult);
+        assertIterableEquals(expectedResult, actualResult);
     }
+
+
 
 
     @Test
