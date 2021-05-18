@@ -155,6 +155,15 @@ public class BookmarkManager {
     }
 
     public List<Bookmark> getSortedBookmarksByDate(){
-        return null;
+        List<Bookmark> sortedList = new ArrayList<>(bookmarkArrayList);
+        sortedList.sort(new Comparator<Bookmark>() {
+            @Override
+            public int compare(Bookmark bookmark1, Bookmark bookmark2) {
+                if (bookmark1.getAddingTime() == null || bookmark2.getAddingTime() == null)
+                    return 0;
+                return bookmark2.getAddingTime().compareTo(bookmark1.getAddingTime());
+            }
+        });
+        return sortedList;
     }
 }

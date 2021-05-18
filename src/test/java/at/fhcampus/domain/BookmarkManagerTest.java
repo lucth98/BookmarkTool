@@ -799,7 +799,7 @@ class BookmarkManagerTest {
     }
 
     @Test
-    public void ensureThatBookmarkAreSortedByDate(){
+    public void ensureThatBookmarkAreSortedByDate() throws InterruptedException {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/test";
@@ -811,11 +811,14 @@ class BookmarkManagerTest {
         Bookmark bookmark3 = new Bookmark(url3);
 
         bookmarkManager.addBookmark(url);
+        Thread.sleep(1000);
         bookmarkManager.addBookmark(url2);
+        Thread.sleep(1000);
         bookmarkManager.addBookmark(url3);
 
         // Act
         List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByDate();
+        actualResult.forEach(bookmark -> System.out.println(bookmark.getAddingTime()));
         List<Bookmark> expectedResult = Arrays.asList(bookmark3, bookmark2, bookmark1);
 
         // Assert
