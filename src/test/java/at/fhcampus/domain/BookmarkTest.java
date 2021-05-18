@@ -325,7 +325,7 @@ class BookmarkTest {
     public void testToString() {
         // Arrange
         Bookmark bookmark = new Bookmark();
-        String expectedValue = "Bookmark{url='null', tags=null, associates=null, rating=0, secure=false, addingTime=null}";
+        String expectedValue = "Bookmark{url='null', tags=null, rating=0, secure=false, addingTime=null}";
         // Act
         String actualValue=bookmark.toString();
         System.out.println(bookmark);

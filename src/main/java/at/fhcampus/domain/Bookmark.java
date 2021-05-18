@@ -95,7 +95,6 @@ public class Bookmark {
         return "Bookmark{" +
                 "url='" + url + '\'' +
                 ", tags=" + tags +
-                ", associates=" + associates +
                 ", rating=" + rating +
                 ", secure=" + secure +
                 ", addingTime=" + addingTime +
