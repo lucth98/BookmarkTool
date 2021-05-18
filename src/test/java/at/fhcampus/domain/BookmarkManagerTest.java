@@ -728,6 +728,9 @@ class BookmarkManagerTest {
         List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByRating();
         List<Bookmark> expectedResult = Arrays.asList(bookmark1, bookmark2, bookmark3);
 
+        System.out.println(actualResult);
+        System.out.println(expectedResult);
+
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
@@ -828,7 +831,12 @@ class BookmarkManagerTest {
         bookmarkManager.addBookmark(url);
 
         bookmarkManager.addBookmark(url2);
+        bookmarkManager.addBookmark(url2);
 
+        bookmarkManager.addBookmark(url3);
+        bookmarkManager.addBookmark(url3);
+        bookmarkManager.addBookmark(url3);
+        bookmarkManager.addBookmark(url3);
         bookmarkManager.addBookmark(url3);
 
         // Act

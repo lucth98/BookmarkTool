@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ ensureThatBookmarkAreSortedByDate2">
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +69,9 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating4">
-    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByDate3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating4 (1)">
+    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="at.fhcampus.domain.*" />
@@ -81,14 +80,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="METHOD_NAME" value="ensureThatBookmarkAreSortedByDate3" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkAreSortedByRating" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByRating2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
+    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByRating2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="at.fhcampus.domain.*" />
@@ -104,7 +103,7 @@
       </method>
     </configuration>
     <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByRating3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
+      <module name="BookmarkTool_V2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="at.fhcampus.domain.*" />
@@ -114,6 +113,22 @@
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
       <option name="METHOD_NAME" value="ensureThatBookmarkAreSortedByRating3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByRating4 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool_V2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkAreSortedByRating4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,33 +150,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
-      <option name="METHOD_NAME" value="testToString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating4" />
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating2" />
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByDate3" />
-        <item itemvalue="JUnit.BookmarkTest.testToString" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating4 (1)" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating3" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating2 (1)" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByRating4" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -416,12 +415,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+ bookmark manager" />
@@ -450,6 +450,24 @@
     <MESSAGE value="+ test" />
     <MESSAGE value="+ ensureThatBookmarkAreSortedByDate2" />
     <option name="LAST_COMMIT_MESSAGE" value="+ ensureThatBookmarkAreSortedByDate2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="102" key="GridCell.Tab.0.bottom" timestamp="1621343119854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="102" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621343119854" />
+    <state width="1493" height="102" key="GridCell.Tab.0.center" timestamp="1621343119854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="102" key="GridCell.Tab.0.center/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621343119854" />
+    <state width="1493" height="102" key="GridCell.Tab.0.left" timestamp="1621343119854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="102" key="GridCell.Tab.0.left/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621343119854" />
+    <state width="1493" height="102" key="GridCell.Tab.0.right" timestamp="1621343119854">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="102" key="GridCell.Tab.0.right/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1621343119854" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

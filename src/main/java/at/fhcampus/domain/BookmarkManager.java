@@ -147,8 +147,7 @@ public class BookmarkManager {
         sortedList.sort(new Comparator<Bookmark>() {
             @Override
             public int compare(Bookmark bookmark1, Bookmark bookmark2) {
-                return (bookmark1.getRating() < bookmark1.getRating()) ? -1 :
-                        ((bookmark1.getRating() == bookmark2.getRating()) ? 0 : 1);
+                return Integer.compare(bookmark2.getRating(), bookmark1.getRating());
             }
         });
         return sortedList;
