@@ -176,15 +176,23 @@ class BookmarkManagerTest {
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<Bookmark> expectedResult = new ArrayList<>();
-        expectedResult.add(bookmark);
+        Bookmark bookmark1=new Bookmark();
+        bookmark1.setUrl(url2);
+        ArrayList<String> tags =new ArrayList<>();
+        tags.add(tag1);
+        bookmark1.setTags(tags);
+        expectedResult.add(bookmark1);
 
         // Act
         bookmarkManager.addTagToBookmark(url2, tag1);
         List<Bookmark> actualResult = bookmarkManager.getBookmarkArrayList();
 
-        // Assert
-        assertIterableEquals(expectedResult, actualResult);
+        //
+        System.out.println(expectedResult);
+        System.out.println(actualResult);
+        assertEquals(expectedResult.toString(), actualResult.toString());
     }
+
 
 
 
