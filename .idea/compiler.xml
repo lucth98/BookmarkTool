@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BookmarkTool" />
         <module name="BookmarkTool_V2" />
+        <module name="BookmarkTool" />
       </profile>
     </annotationProcessing>
   </component>

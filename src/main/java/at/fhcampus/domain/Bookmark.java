@@ -87,7 +87,7 @@ public class Bookmark {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Bookmark bookmark = (Bookmark) o;
-        return rating == bookmark.rating && secure == bookmark.secure && url.equals(bookmark.url);
+        return rating == bookmark.rating && secure == bookmark.secure && url.equals(bookmark.url) && tags.equals(bookmark.tags) && associates.equals(bookmark.associates);
     }
 
     @Override
