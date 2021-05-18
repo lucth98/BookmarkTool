@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="- toString">
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByDate2">
     <configuration name="BookmarkManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -86,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkManagerTest.ensureThatTakCanBeRemoved2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreSortedByDate2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -96,7 +94,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="METHOD_NAME" value="ensureThatTakCanBeRemoved2" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkAreSortedByDate2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreSortedByDate2" />
         <item itemvalue="JUnit.BookmarkManagerTest" />
         <item itemvalue="JUnit.BookmarkTest" />
         <item itemvalue="JUnit.BookmarkTest.testThatTowBookmarksAreEquals2" />
         <item itemvalue="JUnit.BookmarkTest.testThatTowBookmarksAreEquals3" />
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatTakCanBeRemoved2" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621337052711</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="+ test">
+      <created>1621339753088</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1621339753088</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +421,6 @@
     <MESSAGE value="Bookmark constructor refactor" />
     <MESSAGE value="+" />
     <MESSAGE value="+ right project structure" />
-    <MESSAGE value="+ test" />
     <MESSAGE value="+ addingTime" />
     <MESSAGE value="+ Tests" />
     <MESSAGE value="+ Test ensureThatTakCanBeRemoved" />
@@ -433,6 +437,18 @@
     <MESSAGE value="sorting by date test case" />
     <MESSAGE value="+ repaired equals" />
     <MESSAGE value="- toString" />
-    <option name="LAST_COMMIT_MESSAGE" value="- toString" />
+    <MESSAGE value="+ test" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
