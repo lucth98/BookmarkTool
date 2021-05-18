@@ -63,6 +63,78 @@ class BookmarkTest {
     }
 
     @Test
+    public void testThatTowBookmarksAreEquals2() {
+        // Arrange
+        Bookmark actualValue = new Bookmark();
+        Bookmark expectedValue = new Bookmark();
+
+        String url = "https://test.com/Test";
+        ArrayList<String> tags = new ArrayList<>();
+        tags.add("test");
+        LinkedHashSet<Bookmark> associates = new LinkedHashSet<>();
+        associates.add(new Bookmark("https://test.com/Test/tests", "test"));
+
+        LinkedHashSet<Bookmark> associates2 = new LinkedHashSet<>();
+        associates2.add(new Bookmark("https://test.com/Test/tests", "test"));
+        int rating = 0;
+        boolean secure = true;
+
+
+        actualValue.setRating(rating);
+        actualValue.setAssociates(associates);
+        actualValue.setSecure(secure);
+        actualValue.setUrl(url);
+        actualValue.setTags(tags);
+
+        expectedValue.setRating(rating);
+        expectedValue.setAssociates(associates2);
+        expectedValue.setSecure(secure);
+        expectedValue.setUrl(url);
+        expectedValue.setTags(tags);
+
+        // Act & Assert
+        assertEquals(actualValue, expectedValue);
+
+    }
+
+
+    @Test
+    public void testThatTowBookmarksAreEquals3() {
+        // Arrange
+        Bookmark actualValue = new Bookmark();
+        Bookmark expectedValue = new Bookmark();
+
+        String url = "https://test.com/Test";
+        ArrayList<String> tags = new ArrayList<>();
+        tags.add("test");
+
+
+        ArrayList<String> tags2 = new ArrayList<>();
+        tags2.add("test");
+        LinkedHashSet<Bookmark> associates = new LinkedHashSet<>();
+        associates.add(new Bookmark("https://test.com/Test/tests", "test"));
+
+        int rating = 0;
+        boolean secure = true;
+
+
+        actualValue.setRating(rating);
+        actualValue.setAssociates(associates);
+        actualValue.setSecure(secure);
+        actualValue.setUrl(url);
+        actualValue.setTags(tags);
+
+        expectedValue.setRating(rating);
+        expectedValue.setAssociates(associates);
+        expectedValue.setSecure(secure);
+        expectedValue.setUrl(url);
+        expectedValue.setTags(tags2);
+
+        // Act & Assert
+        assertEquals(actualValue, expectedValue);
+
+    }
+    @Test
     public void testThatOneBookmarksAreEquals() {
         // Arrange
         Bookmark actualValue = new Bookmark();
@@ -258,5 +330,6 @@ class BookmarkTest {
         assertNotEquals(actualValue, expectedValue);
 
     }
+
 
 }
