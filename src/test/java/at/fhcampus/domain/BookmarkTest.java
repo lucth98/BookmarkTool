@@ -324,11 +324,13 @@ class BookmarkTest {
     @Test
     public void testToString() {
         // Arrange
-        Bookmark actualValue = new Bookmark();
-        String expectedValue = null;
-        // Act & Assert
-        assertNotEquals(actualValue, expectedValue);
-
+        Bookmark bookmark = new Bookmark();
+        String expectedValue = "Bookmark{url='null', tags=null, associates=null, rating=0, secure=false, addingTime=null}";
+        // Act
+        String actualValue=bookmark.toString();
+        System.out.println(bookmark);
+        // Assert
+        assertEquals(actualValue, expectedValue);
     }
 
 

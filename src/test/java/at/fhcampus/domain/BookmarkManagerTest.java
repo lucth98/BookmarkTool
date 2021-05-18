@@ -764,6 +764,11 @@ class BookmarkManagerTest {
         List<Bookmark> expectedResult = Arrays.asList(bookmark1, bookmark2, bookmark3);
 
         // Assert
+        System.out.println("actualResult");
+        System.out.println(actualResult);
+
+        System.out.println("expectedResult");
+        System.out.println(expectedResult);
         assertIterableEquals(expectedResult, actualResult);
     }
 
@@ -794,6 +799,46 @@ class BookmarkManagerTest {
         List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByRating();
         List<Bookmark> expectedResult = Arrays.asList(bookmark1, bookmark2, bookmark3);
 
+        // Assert
+        System.out.println("actualResult");
+        System.out.println(actualResult);
+
+        System.out.println("expectedResult");
+        System.out.println(expectedResult);
+        assertIterableEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void ensureThatBookmarkAreSortedByRating4(){
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/test";
+        String url2 = "http://java.com";
+        String url3 = "http://testing.at";
+
+        Bookmark bookmark1 = new Bookmark(url);
+        bookmark1.setRating(1);
+
+        Bookmark bookmark2 = new Bookmark(url2);
+        bookmark2.setRating(2);
+
+        Bookmark bookmark3 = new Bookmark(url3);
+        bookmark3.setRating(5);
+
+        bookmarkManager.addBookmark(url);
+
+        bookmarkManager.addBookmark(url2);
+
+        bookmarkManager.addBookmark(url3);
+
+        // Act
+        List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByRating();
+        List<Bookmark> expectedResult = Arrays.asList(bookmark3, bookmark2, bookmark1);
+        System.out.println("actualResult");
+        System.out.println(actualResult);
+
+        System.out.println("expectedResult");
+        System.out.println(expectedResult);
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
@@ -838,11 +883,7 @@ class BookmarkManagerTest {
             Bookmark bookmark2 = new Bookmark(url2);
             Bookmark bookmark3 = new Bookmark(url3);
 
-//            bookmarkManager.addBookmark(url);
-//            Thread.sleep(1000);
-//            bookmarkManager.addBookmark(url2);
-//            Thread.sleep(1000);
-//            bookmarkManager.addBookmark(url3);
+
 
             bookmarkManager.getBookmarkArrayList().add(bookmark1);
             bookmarkManager.getBookmarkArrayList().add(bookmark2);
@@ -851,13 +892,45 @@ class BookmarkManagerTest {
             // Act
             List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByDate();
             actualResult.forEach(bookmark -> System.out.println(bookmark.getAddingTime()));
-
-
             // Assert
             assertIterableEquals(expectedResult, actualResult);
         }catch (Exception e){
             fail(e.toString());
         }
     }
+
+
+    @Test
+    public void ensureThatBookmarkAreSortedByDate3() throws InterruptedException {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/test";
+        String url2 = "http://java.com";
+        String url3 = "http://testing.at";
+
+        Bookmark bookmark1 = new Bookmark(url);
+        Bookmark bookmark2 = new Bookmark(url2);
+        Bookmark bookmark3 = new Bookmark(url3);
+
+        bookmark3.setAddingTime(LocalDateTime.now());
+        Thread.sleep(1000);
+        bookmark2.setAddingTime(LocalDateTime.now());
+        Thread.sleep(1000);
+        bookmark1.setAddingTime(LocalDateTime.now());
+
+
+
+        bookmarkManager.getBookmarkArrayList().add(bookmark1);
+        bookmarkManager.getBookmarkArrayList().add(bookmark2);
+        bookmarkManager.getBookmarkArrayList().add(bookmark3);
+        // Act
+        List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByDate();
+        actualResult.forEach(bookmark -> System.out.println(bookmark.getAddingTime()));
+        List<Bookmark> expectedResult = Arrays.asList(bookmark1, bookmark2, bookmark3);
+
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
+    }
+
 
 }
