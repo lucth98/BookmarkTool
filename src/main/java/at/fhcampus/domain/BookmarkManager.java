@@ -41,6 +41,7 @@ public class BookmarkManager {
     public void addTagToBookmark(String url, String tag) {
         bookmarkArrayList.forEach(bookmark -> {
             if (bookmark.getUrl().equalsIgnoreCase(url)) {
+
                 bookmark.getTags().add(tag);
             }
         });
