@@ -249,4 +249,14 @@ class BookmarkTest {
 
     }
 
+    @Test
+    public void testToString() {
+        // Arrange
+        Bookmark actualValue = new Bookmark();
+        String expectedValue = null;
+        // Act & Assert
+        assertNotEquals(actualValue, expectedValue);
+
+    }
+
 }

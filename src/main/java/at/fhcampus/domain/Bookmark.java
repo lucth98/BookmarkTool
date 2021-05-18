@@ -90,12 +90,4 @@ public class Bookmark {
         return rating == bookmark.rating && secure == bookmark.secure && url.equals(bookmark.url) && tags.equals(bookmark.tags) && associates.equals(bookmark.associates);
     }
 
-    @Override
-    public String toString() {
-        return "Bookmark{" +
-                "url='" + url + '\'' +
-                ", rating=" + rating +
-                ", secure=" + secure +
-                '}';
-    }
 }
