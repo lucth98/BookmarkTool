@@ -1,5 +1,6 @@
 package at.fhcampus.domain;
 
+import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -8,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class BookmarkManager {
+public class BookmarkManager implements Serializable {
 
     private List<Bookmark> bookmarkArrayList = new ArrayList<>();
 

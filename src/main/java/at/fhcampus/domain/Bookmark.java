@@ -1,10 +1,11 @@
 package at.fhcampus.domain;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
 
-public class Bookmark {
+public class Bookmark implements Serializable {
 
 
     private String url;
