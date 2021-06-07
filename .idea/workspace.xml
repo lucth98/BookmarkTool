@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ ensureThatBookmarkmangerCanBeSaved&#10;+User&#10;+Usertest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkmangerCanBeLoaded">
       <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -433,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623083940204</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="+ensureThatBookmarkmangerCanBeLoaded">
+      <created>1623086041990</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1623086041990</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +455,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="url validation + test" />
     <MESSAGE value="secure urls and rating increase + tests" />
     <MESSAGE value="Bookmark constructor refactor" />
     <MESSAGE value="+" />
@@ -477,6 +479,7 @@
     <MESSAGE value="+ tests" />
     <MESSAGE value="+ yml" />
     <MESSAGE value="+ ensureThatBookmarkmangerCanBeSaved&#10;+User&#10;+Usertest" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ ensureThatBookmarkmangerCanBeSaved&#10;+User&#10;+Usertest" />
+    <MESSAGE value="+ensureThatBookmarkmangerCanBeLoaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkmangerCanBeLoaded" />
   </component>
 </project>

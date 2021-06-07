@@ -167,4 +167,13 @@ public class BookmarkManager implements Serializable {
         });
         return sortedList;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        BookmarkManager that = (BookmarkManager) o;
+        return Objects.equals(getBookmarkArrayList(), that.getBookmarkArrayList());
+    }
+
 }
