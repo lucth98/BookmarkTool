@@ -9,9 +9,6 @@ private BookmarkManager bookmarkManager =new BookmarkManager();
         return bookmarkManager;
     }
 
-    public void setBookmarkManager(BookmarkManager bookmarkManager) {
-        this.bookmarkManager = bookmarkManager;
-    }
 
     public void saveBookmarkManager(String fileName)  throws IOException, ClassNotFoundException,Exception{
 

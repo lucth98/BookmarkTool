@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkMangerCanNotBeSaved2">
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkMangerCanNotBeLoaded3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +70,24 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded3">
-    <configuration name="UserTest.ensureThatBookmarkMangerCanBeSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.testThatOneBookmarkMangersAreEquals">
+    <configuration name="BookmarkManagerTest.testThatOneBookmarkMangersAreEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="testThatOneBookmarkMangersAreEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -78,8 +97,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanBeSaved" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,29 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeSaved2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeSaved2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.testThatOneBookmarkMangersAreEquals" />
+        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded3" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded2" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded1" />
-        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanBeSaved" />
-        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeSaved2" />
       </list>
     </recent_temporary>
   </component>
@@ -465,7 +467,28 @@
       <option name="project" value="LOCAL" />
       <updated>1623160076525</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="+ensureThatBookmarkMangerCanNotBeLoaded1">
+      <created>1623160316827</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1623160316827</updated>
+    </task>
+    <task id="LOCAL-00044" summary="+ensureThatBookmarkMangerCanNotBeLoaded2">
+      <created>1623160379382</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1623160379382</updated>
+    </task>
+    <task id="LOCAL-00045" summary="+ensureThatBookmarkMangerCanNotBeLoaded3">
+      <created>1623160451426</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1623160451426</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,9 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ right project structure" />
-    <MESSAGE value="+ addingTime" />
-    <MESSAGE value="+ Tests" />
     <MESSAGE value="+ Test ensureThatTakCanBeRemoved" />
     <MESSAGE value="+ removeTagFromBookmark" />
     <MESSAGE value="+ ensureThatTakCanTBeRemoved" />
@@ -509,6 +529,9 @@
     <MESSAGE value="+loadBookmarkManager" />
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeSaved1" />
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeSaved2" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkMangerCanNotBeSaved2" />
+    <MESSAGE value="+ensureThatBookmarkMangerCanNotBeLoaded1" />
+    <MESSAGE value="+ensureThatBookmarkMangerCanNotBeLoaded2" />
+    <MESSAGE value="+ensureThatBookmarkMangerCanNotBeLoaded3" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkMangerCanNotBeLoaded3" />
   </component>
 </project>

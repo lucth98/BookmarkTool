@@ -1004,5 +1004,22 @@ class BookmarkManagerTest {
         assertIterableEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testThatOneBookmarkMangersAreEquals() {
+        // Arrange
+        BookmarkManager bookmarkManager =new BookmarkManager();
+        // Assert & Act
+        assertEquals(bookmarkManager,bookmarkManager);
+    }
+
+    @Test
+    public void testThatTowBookmarkMangersAreEquals() {
+        // Arrange
+
+        // Act
+        // Assert
+
+    }
+
 
 }

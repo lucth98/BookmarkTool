@@ -129,7 +129,6 @@ class UserTest {
     public void ensureThatBookmarkMangerCanNotBeLoaded1() {
         // Arrange
         User user =new User();
-
         String fileName="NoFile.txt";
         // Act & Assert
 
@@ -140,7 +139,6 @@ class UserTest {
     public void ensureThatBookmarkMangerCanNotBeLoaded2() {
         // Arrange
         User user =new User();
-
         String fileName="";
         // Act & Assert
 
@@ -151,7 +149,6 @@ class UserTest {
     public void ensureThatBookmarkMangerCanNotBeLoaded3() {
         // Arrange
         User user =new User();
-
         String fileName=null;
         // Act & Assert
 
