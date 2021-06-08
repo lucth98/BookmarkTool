@@ -194,6 +194,28 @@ class BookmarkManagerTest {
     }
 
 
+    @Test
+    public void ensureThatUserCanNotAddOneTagToBookmark1() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/Test";
+        String tag = "test";
+        List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
+        Bookmark bookmark = new Bookmark(url);
+        bookmarkArrayList.add(bookmark);
+        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
+
+        List<Bookmark> expectedResult = new ArrayList<>();
+        expectedResult.add(new Bookmark(url));
+
+        // Act
+        bookmarkManager.addTagToBookmark(null, tag);
+        List<Bookmark> actualResult = bookmarkManager.getBookmarkArrayList();
+
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
+
+    }
 
 
     @Test

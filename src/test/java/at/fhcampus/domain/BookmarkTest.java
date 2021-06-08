@@ -315,7 +315,7 @@ class BookmarkTest {
     public void testThatTowBookmarksAreNotEqual7() {
         // Arrange
         Bookmark actualValue = new Bookmark();
-        String expectedValue = null;
+        String expectedValue = "null";
         // Act & Assert
         assertNotEquals(actualValue, expectedValue);
 
