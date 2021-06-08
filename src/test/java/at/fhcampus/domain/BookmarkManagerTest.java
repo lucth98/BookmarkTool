@@ -1022,12 +1022,20 @@ class BookmarkManagerTest {
 
             List<Bookmark> bookmarkArrayList = new ArrayList<Bookmark>();
             bookmarkArrayList.add(new Bookmark(url));
-
-
         // Assert & Act
              assertEquals(bookmarkManager1,bookmarkManager2);
-
     }
+
+    @Test
+    public void testThatTowBookmarkMangersAreNotEquals1() {
+        // Arrange
+        BookmarkManager bookmarkManager1=new BookmarkManager();
+        String bookmarkManager2="";
+
+        // Assert & Act
+        assertNotEquals(bookmarkManager1,bookmarkManager2);
+    }
+
 
 
 }
