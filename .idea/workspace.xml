@@ -67,22 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded2">
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded3">
     <configuration name="UserTest.ensureThatBookmarkMangerCanBeSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -131,6 +116,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeLoaded3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeLoaded3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeSaved2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -149,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded3" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded2" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded1" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanBeSaved" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeSaved2" />
-        <item itemvalue="JUnit.UserTest" />
       </list>
     </recent_temporary>
   </component>
