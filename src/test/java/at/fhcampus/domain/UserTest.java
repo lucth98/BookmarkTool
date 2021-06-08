@@ -60,13 +60,32 @@ class UserTest {
         String fileName=null;
         // Act &  Assert
         NullPointerException nullPointerException=assertThrows(NullPointerException.class,()-> {user.saveBookmarkManager(fileName);});
-       // IOException ioException =assertThrows(IOException.class,()-> {user.saveBookmarkManager(fileName);});
-//        try {
-//            user.saveBookmarkManager(fileName);
-//        }catch (Exception e){
-//            System.out.println(e);
-//            fail();
-//        }
+
+
+    }
+
+    @Test
+    public void ensureThatBookmarkMangerCanNotBeSaved2() {
+        // Arrange
+        User user =new User();
+
+        BookmarkManager bookmarkManager =user.getBookmarkManager();
+
+        String url1 = "http://test.com/Test";
+        String url2 = "http://tester.com/Test";
+        String tag1 = "test";
+        String tag2 = "tester";
+
+        Bookmark bookmark1 =new Bookmark(url1,tag1);
+        Bookmark bookmark2 =new Bookmark(url2,tag2);
+
+        bookmarkManager.getBookmarkArrayList().add(bookmark1);
+        bookmarkManager.getBookmarkArrayList().add(bookmark2);
+
+        String fileName="";
+        // Act &  Assert
+         IOException ioException =assertThrows(IOException.class,()-> {user.saveBookmarkManager(fileName);});
+
     }
 
     @Test
