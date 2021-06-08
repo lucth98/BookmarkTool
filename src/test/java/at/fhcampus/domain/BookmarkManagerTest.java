@@ -1001,6 +1001,9 @@ class BookmarkManagerTest {
         assertIterableEquals(expectedResult, actualResult);
     }
 
+
+
+
     @Test
     public void ensureThatBookmarkAreSortedByDate() throws InterruptedException {
         // Arrange
@@ -1081,6 +1084,36 @@ class BookmarkManagerTest {
         bookmarkManager.getBookmarkArrayList().add(bookmark1);
         bookmarkManager.getBookmarkArrayList().add(bookmark2);
         bookmarkManager.getBookmarkArrayList().add(bookmark3);
+        // Act
+        List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByDate();
+        actualResult.forEach(bookmark -> System.out.println(bookmark.getAddingTime()));
+        List<Bookmark> expectedResult = Arrays.asList(bookmark1, bookmark2, bookmark3);
+
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void ensureThatBookmarkAreNotSortedByDate() throws InterruptedException {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/test";
+        String url2 = "http://java.com";
+        String url3 = "http://testing.at";
+
+        Bookmark bookmark1 = new Bookmark(url);
+        Bookmark bookmark2 = new Bookmark(url2);
+        Bookmark bookmark3 = new Bookmark(url3);
+
+//        bookmarkManager.addBookmark(url);
+//        Thread.sleep(1000);
+//        bookmarkManager.addBookmark(url2);
+//        Thread.sleep(1000);
+//        bookmarkManager.addBookmark(url3);
+
+        bookmarkManager.getBookmarkArrayList().add(new Bookmark(url));
+        bookmarkManager.getBookmarkArrayList().add(new Bookmark(url2));
+        bookmarkManager.getBookmarkArrayList().add(new Bookmark(url3));
         // Act
         List<Bookmark> actualResult = bookmarkManager.getSortedBookmarksByDate();
         actualResult.forEach(bookmark -> System.out.println(bookmark.getAddingTime()));
