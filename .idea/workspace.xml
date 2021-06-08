@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkmangerCanBeLoaded">
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+loadBookmarkManager" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -436,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623086041990</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="+loadBookmarkManager">
+      <created>1623086373021</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1623086373021</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +460,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="secure urls and rating increase + tests" />
     <MESSAGE value="Bookmark constructor refactor" />
     <MESSAGE value="+" />
     <MESSAGE value="+ right project structure" />
@@ -480,6 +484,7 @@
     <MESSAGE value="+ yml" />
     <MESSAGE value="+ ensureThatBookmarkmangerCanBeSaved&#10;+User&#10;+Usertest" />
     <MESSAGE value="+ensureThatBookmarkmangerCanBeLoaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkmangerCanBeLoaded" />
+    <MESSAGE value="+loadBookmarkManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="+loadBookmarkManager" />
   </component>
 </project>
