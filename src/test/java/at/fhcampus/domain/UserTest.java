@@ -136,6 +136,19 @@ class UserTest {
         FileNotFoundException fileNotFoundException=assertThrows(FileNotFoundException.class,()-> {user.loadBookmarkManager(fileName);});
     }
 
+    @Test
+    public void ensureThatBookmarkMangerCanNotBeLoaded2() {
+        // Arrange
+        User user =new User();
+
+        String fileName="";
+        // Act & Assert
+
+        FileNotFoundException fileNotFoundException=assertThrows(FileNotFoundException.class,()-> {user.loadBookmarkManager(fileName);});
+    }
+
+
+
 
 
 

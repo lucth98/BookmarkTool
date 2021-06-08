@@ -67,7 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded1">
+  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded2">
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -115,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeSaved1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeLoaded2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +125,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeSaved1" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeLoaded2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded2" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded1" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanBeSaved" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeSaved2" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeSaved1" />
       </list>
     </recent_temporary>
   </component>
