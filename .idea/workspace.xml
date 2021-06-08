@@ -67,7 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.testThatTowBookmarkMangersAreNotEquals1">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.testThatTowBookmarkMangersAreNotEquals2">
     <configuration name="BookmarkManagerTest.testThatOneBookmarkMangersAreEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -116,6 +116,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookmarkManagerTest.testThatTowBookmarkMangersAreNotEquals2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="testThatTowBookmarkMangersAreNotEquals2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -131,29 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeLoaded3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeLoaded3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.testThatTowBookmarkMangersAreNotEquals2" />
         <item itemvalue="JUnit.BookmarkManagerTest.testThatTowBookmarkMangersAreNotEquals1" />
         <item itemvalue="JUnit.BookmarkManagerTest.testThatTowBookmarkMangersAreEquals" />
         <item itemvalue="JUnit.BookmarkManagerTest.testThatOneBookmarkMangersAreEquals" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded3" />
       </list>
     </recent_temporary>
   </component>

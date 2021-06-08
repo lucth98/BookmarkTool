@@ -1036,6 +1036,15 @@ class BookmarkManagerTest {
         assertNotEquals(bookmarkManager1,bookmarkManager2);
     }
 
+    @Test
+    public void testThatTowBookmarkMangersAreNotEquals2() {
+        // Arrange
+        BookmarkManager bookmarkManager1=new BookmarkManager();
+        BookmarkManager bookmarkManager2=null;
+
+        // Assert & Act
+        assertNotEquals(bookmarkManager1,bookmarkManager2);
+    }
 
 
 }
