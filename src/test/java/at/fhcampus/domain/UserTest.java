@@ -2,6 +2,7 @@ package at.fhcampus.domain;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Locale;
 
@@ -120,6 +121,19 @@ class UserTest {
         }
         //Assert
     assertEquals(expectedResult,actualResult);
+    }
+
+
+
+    @Test
+    public void ensureThatBookmarkMangerCanNotBeLoaded1() {
+        // Arrange
+        User user =new User();
+
+        String fileName="NoFile.txt";
+        // Act & Assert
+
+        FileNotFoundException fileNotFoundException=assertThrows(FileNotFoundException.class,()-> {user.loadBookmarkManager(fileName);});
     }
 
 

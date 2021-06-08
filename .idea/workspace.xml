@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkMangerCanNotBeSaved1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkMangerCanNotBeSaved2">
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanBeSaved">
+  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded1">
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -100,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeLoaded1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -110,7 +109,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeSaved" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeLoaded1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded1" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanBeSaved" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeSaved2" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeSaved1" />
-        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeSaved" />
       </list>
     </recent_temporary>
   </component>
@@ -458,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623159459642</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="+ensureThatBookmarkMangerCanNotBeSaved2">
+      <created>1623160076525</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1623160076525</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +483,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+" />
     <MESSAGE value="+ right project structure" />
     <MESSAGE value="+ addingTime" />
     <MESSAGE value="+ Tests" />
@@ -502,6 +507,7 @@
     <MESSAGE value="+ensureThatBookmarkmangerCanBeLoaded" />
     <MESSAGE value="+loadBookmarkManager" />
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeSaved1" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkMangerCanNotBeSaved1" />
+    <MESSAGE value="+ensureThatBookmarkMangerCanNotBeSaved2" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkMangerCanNotBeSaved2" />
   </component>
 </project>
