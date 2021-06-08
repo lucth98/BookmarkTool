@@ -69,7 +69,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatUserCanNotAddOneTagToBookmark">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatUserCanNotAddOneTagToBookmark2">
     <configuration name="BookmarkManagerTest.ensureThatUserCanNotAddOneTagToBookmark" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -86,6 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookmarkManagerTest.ensureThatUserCanNotAddOneTagToBookmark2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureThatUserCanNotAddOneTagToBookmark2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookmarkManagerTest.testThatTowBookmarkMangersAreEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -97,22 +113,6 @@
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
       <option name="METHOD_NAME" value="testThatTowBookmarkMangersAreEquals" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookmarkManagerTest.testThatTowBookmarkMangersAreNotEquals2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="METHOD_NAME" value="testThatTowBookmarkMangersAreNotEquals2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatUserCanNotAddOneTagToBookmark2" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureThatUserCanNotAddOneTagToBookmark" />
         <item itemvalue="JUnit.BookmarkTest.testThatTowBookmarksAreNotEqual7" />
         <item itemvalue="JUnit.BookmarkManagerTest.testThatTowBookmarkMangersAreNotEquals3" />
         <item itemvalue="JUnit.BookmarkManagerTest.testThatTowBookmarkMangersAreEquals" />
-        <item itemvalue="JUnit.BookmarkManagerTest.testThatTowBookmarkMangersAreNotEquals2" />
       </list>
     </recent_temporary>
   </component>
