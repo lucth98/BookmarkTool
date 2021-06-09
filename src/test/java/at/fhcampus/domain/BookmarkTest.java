@@ -2,8 +2,10 @@ package at.fhcampus.domain;
 
 import org.junit.jupiter.api.*;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -330,6 +332,34 @@ class BookmarkTest {
         // Act
         String actualValue = bookmark.toString();
         System.out.println(bookmark);
+        // Assert
+        assertEquals(actualValue, expectedValue);
+    }
+
+
+    @Test
+    public void testhashCode() {
+        // Arrange
+        Bookmark bookmark = new Bookmark();
+        ArrayList<String> tags = new ArrayList<>();
+        tags.add("test");
+        bookmark.setTags(tags);
+        LocalDateTime localDateTime =LocalDateTime.now();
+        bookmark.setAddingTime(localDateTime);
+        String url = "https://test.com/Test";
+        bookmark.setUrl(url);
+        int rating=5;
+        bookmark.setRating(rating);
+        LinkedHashSet<Bookmark> associates = new LinkedHashSet<>();
+        associates.add(new Bookmark("https://test.com/Test/tests", "test"));
+        bookmark.setAssociates(associates);
+        boolean secure=true;
+        bookmark.setSecure(secure);
+        int expectedValue= Objects.hash(url, tags, associates, rating, secure,localDateTime );
+
+
+        // Act
+        int actualValue =bookmark.hashCode();
         // Assert
         assertEquals(actualValue, expectedValue);
     }
