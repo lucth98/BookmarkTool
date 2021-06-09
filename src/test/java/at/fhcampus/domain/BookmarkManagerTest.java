@@ -1175,4 +1175,22 @@ class BookmarkManagerTest {
         assertNotEquals(bookmarkManager1, bookmarkManager2);
     }
 
+    @Test
+    public void testhashCode() {
+        // Arrange
+        BookmarkManager bookmarkManager=new BookmarkManager();
+
+        String url = "http://test.com/test";
+
+        List<Bookmark> bookmarkArrayList = new ArrayList<Bookmark>();
+        bookmarkArrayList.add(new Bookmark(url));
+
+        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
+        int expectedValue= Objects.hash(bookmarkArrayList);
+        // Act
+        int actualValue =bookmarkManager.hashCode();
+        // Assert
+        assertEquals(actualValue, expectedValue);
+    }
+
 }
