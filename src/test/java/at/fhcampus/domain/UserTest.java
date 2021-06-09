@@ -276,6 +276,46 @@ class UserTest {
 
     }
 
+    @Test
+    public void ensureThatBackupHasBeenCreated2() {
+        // Arrange
+        User user =new User();
+        String username="newTestUser";
+        int backUpNr=2;
+
+        user.setBackUpNr(backUpNr);
+        user.setUsername(username);
+        BookmarkManager expectedResult =user.getBookmarkManager();
+        BookmarkManager actualResult =user.getBookmarkManager();
+
+
+        String url1 = "http://test.com/Test";
+        String url2 = "http://tester.com/Test";
+        String tag1 = "test";
+        String tag2 = "tester";
+
+        Bookmark bookmark1 =new Bookmark(url1,tag1);
+        Bookmark bookmark2 =new Bookmark(url2,tag2);
+
+        expectedResult.getBookmarkArrayList().add(bookmark1);
+        expectedResult.getBookmarkArrayList().add(bookmark2);
+
+        String fileName=username+"Backup_NR:"+backUpNr;
+        // Act
+        try {
+            user.generateBackUp();
+
+            File file=new File(fileName);
+            //Assert
+            assertTrue(file.exists());
+
+        }catch (Exception e){
+            System.out.println(e);
+            fail();
+        }
+
+    }
+
 //
 //
 //    @Test

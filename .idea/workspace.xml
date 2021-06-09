@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkMangerHasBeSaved">
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+generateBackUp">
       <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
@@ -68,7 +68,7 @@
       <command value="mvn clean install  test jacoco:report org.pitest:pitest-maven:mutationCoverage -DhistoryInputFile=target/fasterPitMutationTesting-history.txt -DhistoryOutputFile=target/fasterPitMutationTesting-history.txt -Dsonar.pitest.mode=reuseReport -Dthreads=4 -DtimestampedReports=false" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.ensureThatBackupHasBeenCreated">
+  <component name="RunManager" selected="JUnit.UserTest.ensureThatBackupHasBeenCreated2">
     <configuration name="UserTest.ensureThatBackupHasBeenCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -80,6 +80,22 @@
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
       <option name="METHOD_NAME" value="ensureThatBackupHasBeenCreated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.ensureThatBackupHasBeenCreated2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
+      <option name="METHOD_NAME" value="ensureThatBackupHasBeenCreated2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,29 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testThatStreamClosesSaveing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="testThatStreamClosesSaveing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.ensureThatBackupHasBeenCreated2" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasBeenCreated" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerHasBeSaved" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanBeRestored" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeLoaded3" />
-        <item itemvalue="JUnit.UserTest.testThatStreamClosesSaveing" />
       </list>
     </recent_temporary>
   </component>
@@ -171,20 +171,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00009" summary="+">
-      <created>1620683523640</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1620683523640</updated>
-    </task>
-    <task id="LOCAL-00010" summary="+">
-      <created>1620692219439</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1620692219439</updated>
     </task>
     <task id="LOCAL-00011" summary="+ right project structure">
       <created>1620925428334</created>
@@ -515,7 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623275046069</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="+ensureThatBackupHasBeenCreated">
+      <created>1623275527169</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1623275527169</updated>
+    </task>
+    <task id="LOCAL-00059" summary="+generateBackUp">
+      <created>1623275811646</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1623275811646</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,8 +534,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- toString" />
-    <MESSAGE value="+ test" />
     <MESSAGE value="+ ensureThatBookmarkAreSortedByDate2" />
     <MESSAGE value="+ tests" />
     <MESSAGE value="+ yml" />
@@ -559,6 +557,8 @@
     <MESSAGE value="+ensureThatBookmarkMangerCanBeRestored" />
     <MESSAGE value="+restoreBookmarks" />
     <MESSAGE value="+ensureThatBookmarkMangerHasBeSaved" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkMangerHasBeSaved" />
+    <MESSAGE value="+ensureThatBackupHasBeenCreated" />
+    <MESSAGE value="+generateBackUp" />
+    <option name="LAST_COMMIT_MESSAGE" value="+generateBackUp" />
   </component>
 </project>

@@ -11,9 +11,7 @@ public class User {
 
     private int backUpNr=1;
 
-    public int getBackUpNr() {
-        return backUpNr;
-    }
+
 
     public void setBackUpNr(int backUpNr) {
         this.backUpNr = backUpNr;
