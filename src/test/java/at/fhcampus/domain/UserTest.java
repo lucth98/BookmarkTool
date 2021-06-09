@@ -321,6 +321,28 @@ class UserTest {
         }
     }
 
+
+
+    @Test
+    public void ensureThatBackupNumberHasIncreast() {
+        // Arrange
+        User user = new User();
+        String username = "newTestUser";
+        user.setUsername(username);
+        int expectedValue=2;
+        // Act
+        try {
+            user.generateBackUp();
+            int actualValue=  user.getBackUpNr();
+            //Assert
+            assertEquals(actualValue, expectedValue);
+
+        } catch (Exception e) {
+            System.out.println(e);
+            fail();
+        }
+    }
+
 //
 //
 //    @Test

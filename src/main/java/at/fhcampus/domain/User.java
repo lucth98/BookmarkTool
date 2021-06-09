@@ -20,8 +20,8 @@ public class User {
         return bookmarkManager;
     }
 
-    public String getUsername() {
-        return username;
+    public int getBackUpNr() {
+        return backUpNr;
     }
 
     public void setUsername(String username) {
