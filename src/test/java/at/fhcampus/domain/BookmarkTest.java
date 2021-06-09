@@ -355,7 +355,7 @@ class BookmarkTest {
         bookmark.setAssociates(associates);
         boolean secure=true;
         bookmark.setSecure(secure);
-        int expectedValue= Objects.hash(url, tags, associates, rating, secure,localDateTime );
+        int expectedValue= Objects.hash(url, tags, rating, secure,localDateTime );
 
 
         // Act

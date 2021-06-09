@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+reformat Code">
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+testhashCode">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,11 +65,42 @@
       <command value="mvn test jacoco:report" />
       <command value="mvn clean install test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
       <command value="mvn clean install" />
-      <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
       <command value="mvn clean install  test jacoco:report org.pitest:pitest-maven:mutationCoverage -DhistoryInputFile=target/fasterPitMutationTesting-history.txt -DhistoryOutputFile=target/fasterPitMutationTesting-history.txt -Dsonar.pitest.mode=reuseReport -Dthreads=4 -DtimestampedReports=false" />
+      <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.testhashCode">
+  <component name="RunManager" selected="JUnit.UserTest">
+    <configuration name="BookmarkManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookmarkManagerTest.ensureBookmarkHasAssociates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureBookmarkHasAssociates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookmarkManagerTest.testhashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -84,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkTest.testhashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookmarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -94,13 +127,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
-      <option name="METHOD_NAME" value="testhashCode" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.ensureThatBackupHasBeenCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -110,51 +142,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBackupHasBeenCreated" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.ensureThatBackupHasBeenCreated2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBackupHasBeenCreated2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.ensureThatBookmarkMangerHasBeSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBookmarkMangerHasBeSaved" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.BookmarkManagerTest" />
+        <item itemvalue="JUnit.BookmarkTest" />
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureBookmarkHasAssociates" />
         <item itemvalue="JUnit.BookmarkManagerTest.testhashCode" />
-        <item itemvalue="JUnit.BookmarkTest.testhashCode" />
-        <item itemvalue="JUnit.UserTest.ensureThatBackupHasBeenCreated2" />
-        <item itemvalue="JUnit.UserTest.ensureThatBackupHasBeenCreated" />
-        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerHasBeSaved" />
       </list>
     </recent_temporary>
   </component>
@@ -170,20 +169,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00013" summary="+ addingTime">
-      <created>1621006693076</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1621006693076</updated>
-    </task>
-    <task id="LOCAL-00014" summary="+ addingTime">
-      <created>1621006812568</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1621006812568</updated>
     </task>
     <task id="LOCAL-00015" summary="+ addingTime">
       <created>1621008087307</created>
@@ -514,7 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623276429781</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="+testhashCode">
+      <created>1623276994468</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1623276994468</updated>
+    </task>
+    <task id="LOCAL-00063" summary="+testhashCode">
+      <created>1623277215369</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1623277215369</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +532,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ yml" />
     <MESSAGE value="+ ensureThatBookmarkmangerCanBeSaved&#10;+User&#10;+Usertest" />
     <MESSAGE value="+ensureThatBookmarkmangerCanBeLoaded" />
     <MESSAGE value="+loadBookmarkManager" />
@@ -558,6 +556,7 @@
     <MESSAGE value="+generateBackUp" />
     <MESSAGE value="+ensureThatBackupHasBeenCreated2" />
     <MESSAGE value="+reformat Code" />
-    <option name="LAST_COMMIT_MESSAGE" value="+reformat Code" />
+    <MESSAGE value="+testhashCode" />
+    <option name="LAST_COMMIT_MESSAGE" value="+testhashCode" />
   </component>
 </project>
