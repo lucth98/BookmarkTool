@@ -1123,6 +1123,7 @@ class BookmarkManagerTest {
         assertIterableEquals(expectedResult, actualResult);
     }
 
+
     @Test
     public void testThatOneBookmarkMangersAreEquals() {
         // Arrange

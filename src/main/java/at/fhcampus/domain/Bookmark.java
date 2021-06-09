@@ -92,6 +92,11 @@ public class Bookmark implements Serializable {
     }
 
     @Override
+    public int hashCode() {
+        return Objects.hash(getUrl(), getTags(), getAssociates(), getRating(), isSecure(), getAddingTime());
+    }
+
+    @Override
     public String toString() {
         return "Bookmark{" +
                 "url='" + url + '\'' +

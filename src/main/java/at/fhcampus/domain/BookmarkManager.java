@@ -176,4 +176,8 @@ public class BookmarkManager implements Serializable {
         return Objects.equals(getBookmarkArrayList(), that.getBookmarkArrayList());
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookmarkArrayList());
+    }
 }
