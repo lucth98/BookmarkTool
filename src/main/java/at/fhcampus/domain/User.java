@@ -5,14 +5,21 @@ import org.mockito.Spy;
 import java.io.*;
 
 public class User {
+    private String username="";
 
-
-private BookmarkManager bookmarkManager =new BookmarkManager();
+    private BookmarkManager bookmarkManager =new BookmarkManager();
 
     public BookmarkManager getBookmarkManager() {
         return bookmarkManager;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
     public void saveBookmarkManager(String fileName)  throws IOException, ClassNotFoundException,Exception{
 
@@ -42,5 +49,8 @@ private BookmarkManager bookmarkManager =new BookmarkManager();
         }catch (Exception e){
             System.out.println(e);
         }
+    }
+
+    public void generateBackUp() {
     }
 }
