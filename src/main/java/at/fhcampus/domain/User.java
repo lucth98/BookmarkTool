@@ -9,6 +9,16 @@ public class User {
 
     private BookmarkManager bookmarkManager =new BookmarkManager();
 
+    private int backUpNr=1;
+
+    public int getBackUpNr() {
+        return backUpNr;
+    }
+
+    public void setBackUpNr(int backUpNr) {
+        this.backUpNr = backUpNr;
+    }
+
     public BookmarkManager getBookmarkManager() {
         return bookmarkManager;
     }
@@ -52,5 +62,11 @@ public class User {
     }
 
     public void generateBackUp() {
+        try {
+           saveBookmarkManager(username+"Backup_NR:"+backUpNr);
+           backUpNr++;
+        }catch (Exception e){
+            System.out.println(e);
+        }
     }
 }
