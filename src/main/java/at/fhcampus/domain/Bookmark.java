@@ -17,8 +17,6 @@ public class Bookmark implements Serializable {
     private LocalDateTime addingTime;
 
 
-
-
     public Bookmark() {
     }
 

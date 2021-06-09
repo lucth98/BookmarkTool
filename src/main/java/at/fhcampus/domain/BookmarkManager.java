@@ -144,7 +144,7 @@ public class BookmarkManager implements Serializable {
         bookmarkArrayList.removeIf(currentBookmark -> currentBookmark.getUrl().equalsIgnoreCase(url));
     }
 
-    public List<Bookmark> getSortedBookmarksByRating(){
+    public List<Bookmark> getSortedBookmarksByRating() {
         List<Bookmark> sortedList = new ArrayList<>(bookmarkArrayList);
         sortedList.sort(new Comparator<Bookmark>() {
             @Override
@@ -155,7 +155,7 @@ public class BookmarkManager implements Serializable {
         return sortedList;
     }
 
-    public List<Bookmark> getSortedBookmarksByDate(){
+    public List<Bookmark> getSortedBookmarksByDate() {
         List<Bookmark> sortedList = new ArrayList<>(bookmarkArrayList);
         sortedList.sort(new Comparator<Bookmark>() {
             @Override

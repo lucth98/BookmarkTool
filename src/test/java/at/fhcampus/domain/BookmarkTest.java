@@ -134,6 +134,7 @@ class BookmarkTest {
         assertEquals(actualValue, expectedValue);
 
     }
+
     @Test
     public void testThatOneBookmarksAreEquals() {
         // Arrange
@@ -327,7 +328,7 @@ class BookmarkTest {
         Bookmark bookmark = new Bookmark();
         String expectedValue = "Bookmark{url='null', tags=null, rating=0, secure=false, addingTime=null}";
         // Act
-        String actualValue=bookmark.toString();
+        String actualValue = bookmark.toString();
         System.out.println(bookmark);
         // Assert
         assertEquals(actualValue, expectedValue);

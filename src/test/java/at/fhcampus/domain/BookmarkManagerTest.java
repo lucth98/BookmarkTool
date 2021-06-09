@@ -113,7 +113,6 @@ class BookmarkManagerTest {
     }
 
 
-
     @Test
     public void ensureThatUserCanAddOneTagToBookmark3() {
         // Arrange
@@ -176,9 +175,9 @@ class BookmarkManagerTest {
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<Bookmark> expectedResult = new ArrayList<>();
-        Bookmark bookmark1=new Bookmark();
+        Bookmark bookmark1 = new Bookmark();
         bookmark1.setUrl(url2);
-        ArrayList<String> tags =new ArrayList<>();
+        ArrayList<String> tags = new ArrayList<>();
         tags.add(tag1);
         bookmark1.setTags(tags);
         expectedResult.add(bookmark1);
@@ -218,7 +217,6 @@ class BookmarkManagerTest {
     }
 
 
-
     @Test
     public void ensureThatUserCanNotAddOneTagToBookmark2() {
         // Arrange
@@ -241,6 +239,7 @@ class BookmarkManagerTest {
         assertIterableEquals(expectedResult, actualResult);
 
     }
+
     @Test
     public void ensureUrlIsValid() {
         // Arrange
@@ -401,6 +400,7 @@ class BookmarkManagerTest {
         assertIterableEquals(expectedResult, actualResult);
 
     }
+
     @Test
     public void ensureBookmarkHasnotAssociates() {
         // Arrange
@@ -467,8 +467,6 @@ class BookmarkManagerTest {
     }
 
 
-
-
     @Test
     public void ensureAddingMultipleBookmarksWithAssociatesinAddBookmark() {
         // Arrange
@@ -481,17 +479,15 @@ class BookmarkManagerTest {
         //Bookmark bookmark2 = new Bookmark(url2);
 
         bookmarkManager.getBookmarkArrayList().add(bookmark1);
-      //  bookmarkManager.getBookmarkArrayList().add(bookmark2);
+        //  bookmarkManager.getBookmarkArrayList().add(bookmark2);
 
         Set<Bookmark> expectedResult = new LinkedHashSet<>();
         Set<Bookmark> actualResult = new LinkedHashSet<>();
 
 
-
         //Act
-       bookmarkManager.addBookmark(url2);
+        bookmarkManager.addBookmark(url2);
         expectedResult.add(bookmarkManager.getBookmarkArrayList().get(1));
-
 
 
         actualResult = bookmark1.getAssociates();
@@ -503,18 +499,18 @@ class BookmarkManagerTest {
 
 
     @Test
-    public void ensureThatCurrentDateIsAdded(){
+    public void ensureThatCurrentDateIsAdded() {
         // Arrange
-        BookmarkManager bookmarkManager=new BookmarkManager();
+        BookmarkManager bookmarkManager = new BookmarkManager();
         String url1 = "http://test.com/Test/java";
-        LocalDateTime expectedResult=LocalDateTime.now();
+        LocalDateTime expectedResult = LocalDateTime.now();
         LocalDateTime actualResult;
-       int expectedMo=expectedResult.getMonthValue();
-       int expectedD=expectedResult.getDayOfMonth();
-       int expecteY=expectedResult.getYear();
+        int expectedMo = expectedResult.getMonthValue();
+        int expectedD = expectedResult.getDayOfMonth();
+        int expecteY = expectedResult.getYear();
 
-       int expectedH=expectedResult.getHour();
-       int expectedMi=expectedResult.getMinute();
+        int expectedH = expectedResult.getHour();
+        int expectedMi = expectedResult.getMinute();
 
 
         int actualMo;
@@ -525,44 +521,42 @@ class BookmarkManagerTest {
         int actualMi;
         //Act
         bookmarkManager.addBookmark(url1);
-        actualResult=bookmarkManager.getBookmarkArrayList().get(0).getAddingTime();
+        actualResult = bookmarkManager.getBookmarkArrayList().get(0).getAddingTime();
 
 
-         actualMo=actualResult.getMonthValue();
-         actualD=actualResult.getDayOfMonth();
-         actualY=actualResult.getYear();
+        actualMo = actualResult.getMonthValue();
+        actualD = actualResult.getDayOfMonth();
+        actualY = actualResult.getYear();
 
-         actualH=actualResult.getHour();
-         actualMi=actualResult.getMinute();
-
-
+        actualH = actualResult.getHour();
+        actualMi = actualResult.getMinute();
 
 
         // Assert
-        assertEquals(expectedD,actualD);
-        assertEquals(expectedH,actualH);
-        assertEquals(expectedMi,actualMi);
-        assertEquals(expectedMo,actualMo);
-        assertEquals(expecteY,actualY);
+        assertEquals(expectedD, actualD);
+        assertEquals(expectedH, actualH);
+        assertEquals(expectedMi, actualMi);
+        assertEquals(expectedMo, actualMo);
+        assertEquals(expecteY, actualY);
 
     }
 
 
     @Test
-    public void ensureThatTakCanBeRemoved(){
+    public void ensureThatTakCanBeRemoved() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
         String tag = "test";
         List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
-        Bookmark bookmark = new Bookmark(url,tag);
+        Bookmark bookmark = new Bookmark(url, tag);
 
         bookmarkArrayList.add(bookmark);
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<String> expectedResult = new ArrayList<>();
         // Act
-        bookmarkManager.removeTagFromBookmark(url,tag);
+        bookmarkManager.removeTagFromBookmark(url, tag);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         assertIterableEquals(expectedResult, actualResult);
@@ -570,28 +564,7 @@ class BookmarkManagerTest {
 
 
     @Test
-    public void ensureThatTakCanBeRemoved2(){
-        // Arrange
-        BookmarkManager bookmarkManager = new BookmarkManager();
-        String url = "http://test.com/Test";
-        String url2 = "http://TEST.com/TEST";
-        String tag = "test";
-        String tag2 = "TEST";
-        List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
-        Bookmark bookmark = new Bookmark(url,tag);
-
-        bookmarkArrayList.add(bookmark);
-        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
-
-        List<String> expectedResult = new ArrayList<>();
-        // Act
-        bookmarkManager.removeTagFromBookmark(url2,tag2);
-        List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
-        // Assert
-        assertIterableEquals(expectedResult, actualResult);
-    }
-    @Test
-    public void ensureThatTakCanBeRemoved3(){
+    public void ensureThatTakCanBeRemoved2() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
@@ -599,21 +572,21 @@ class BookmarkManagerTest {
         String tag = "test";
         String tag2 = "TEST";
         List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
-        Bookmark bookmark = new Bookmark(url,tag);
+        Bookmark bookmark = new Bookmark(url, tag);
 
         bookmarkArrayList.add(bookmark);
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<String> expectedResult = new ArrayList<>();
         // Act
-        bookmarkManager.removeTagFromBookmark(url,tag2);
+        bookmarkManager.removeTagFromBookmark(url2, tag2);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void ensureThatTakCanBeRemoved4(){
+    public void ensureThatTakCanBeRemoved3() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
@@ -621,21 +594,43 @@ class BookmarkManagerTest {
         String tag = "test";
         String tag2 = "TEST";
         List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
-        Bookmark bookmark = new Bookmark(url,tag);
+        Bookmark bookmark = new Bookmark(url, tag);
 
         bookmarkArrayList.add(bookmark);
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<String> expectedResult = new ArrayList<>();
         // Act
-        bookmarkManager.removeTagFromBookmark(url2,tag);
+        bookmarkManager.removeTagFromBookmark(url, tag2);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void ensureThatTakCanBeRemoved5(){
+    public void ensureThatTakCanBeRemoved4() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/Test";
+        String url2 = "http://TEST.com/TEST";
+        String tag = "test";
+        String tag2 = "TEST";
+        List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
+        Bookmark bookmark = new Bookmark(url, tag);
+
+        bookmarkArrayList.add(bookmark);
+        bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
+
+        List<String> expectedResult = new ArrayList<>();
+        // Act
+        bookmarkManager.removeTagFromBookmark(url2, tag);
+        List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
+        // Assert
+        assertIterableEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void ensureThatTakCanBeRemoved5() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
@@ -643,20 +638,21 @@ class BookmarkManagerTest {
         String tag = "test";
         String tag2 = "TEST";
         List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
-        Bookmark bookmark = new Bookmark(url,tag);
+        Bookmark bookmark = new Bookmark(url, tag);
 
         bookmarkArrayList.add(bookmark);
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<String> expectedResult = new ArrayList<>();
         // Act
-        bookmarkManager.removeTagFromBookmark(url2,tag);
+        bookmarkManager.removeTagFromBookmark(url2, tag);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
+
     @Test
-    public void ensureThatTakCanBeRemoved6(){
+    public void ensureThatTakCanBeRemoved6() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url2 = "http://test.com/Test";
@@ -664,20 +660,21 @@ class BookmarkManagerTest {
         String tag = "test";
         String tag2 = "TEST";
         List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
-        Bookmark bookmark = new Bookmark(url,tag);
+        Bookmark bookmark = new Bookmark(url, tag);
 
         bookmarkArrayList.add(bookmark);
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<String> expectedResult = new ArrayList<>();
         // Act
-        bookmarkManager.removeTagFromBookmark(url2,tag);
+        bookmarkManager.removeTagFromBookmark(url2, tag);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
+
     @Test
-    public void ensureThatTakCanBeRemoved7(){
+    public void ensureThatTakCanBeRemoved7() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url1 = "http://test.com/Test";
@@ -687,7 +684,7 @@ class BookmarkManagerTest {
         List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
         Bookmark bookmark = new Bookmark();
         bookmark.setUrl(url2);
-        ArrayList <String> tags =new ArrayList<>();
+        ArrayList<String> tags = new ArrayList<>();
         tags.add(tag2);
         bookmark.setTags(tags);
 
@@ -696,16 +693,15 @@ class BookmarkManagerTest {
 
         List<String> expectedResult = new ArrayList<>();
         // Act
-        bookmarkManager.removeTagFromBookmark(url1,tag1);
+        bookmarkManager.removeTagFromBookmark(url1, tag1);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
 
 
-
     @Test
-    public void ensureThatTakCanTBeRemoved(){
+    public void ensureThatTakCanTBeRemoved() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
@@ -735,7 +731,7 @@ class BookmarkManagerTest {
         expectedResult.add(tag5);
         expectedResult.add(tag6);
         // Act
-        bookmarkManager.removeTagFromBookmark(url,tag);
+        bookmarkManager.removeTagFromBookmark(url, tag);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         System.out.println(actualResult);
@@ -745,50 +741,48 @@ class BookmarkManagerTest {
 
 
     @Test
-    public void ensureThatTakCanTBeRemoved2(){
+    public void ensureThatTakCanTBeRemoved2() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
         String tag = "test";
         List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
-        Bookmark bookmark = new Bookmark(url,tag);
+        Bookmark bookmark = new Bookmark(url, tag);
 
         bookmarkArrayList.add(bookmark);
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<String> expectedResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Act
-        bookmarkManager.removeTagFromBookmark(null,tag);
+        bookmarkManager.removeTagFromBookmark(null, tag);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void ensureThatTakCanTBeRemoved3(){
+    public void ensureThatTakCanTBeRemoved3() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
         String tag = "test";
         List<Bookmark> bookmarkArrayList = bookmarkManager.getBookmarkArrayList();
-        Bookmark bookmark = new Bookmark(url,tag);
+        Bookmark bookmark = new Bookmark(url, tag);
 
         bookmarkArrayList.add(bookmark);
         bookmarkManager.setBookmarkArrayList(bookmarkArrayList);
 
         List<String> expectedResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Act
-        bookmarkManager.removeTagFromBookmark("",tag);
+        bookmarkManager.removeTagFromBookmark("", tag);
         List<String> actualResult = bookmarkManager.getBookmarkArrayList().get(0).getTags();
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
 
 
-
-
     @Test
-    public void ensureThatBookmarkCanBeRemoved(){
+    public void ensureThatBookmarkCanBeRemoved() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
@@ -807,7 +801,7 @@ class BookmarkManagerTest {
     }
 
     @Test
-    public void ensureThatBookmarkCanBeRemoved2(){
+    public void ensureThatBookmarkCanBeRemoved2() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
@@ -828,7 +822,7 @@ class BookmarkManagerTest {
 
 
     @Test
-    public void ensureThatBookmarkCanTBeRemoved(){
+    public void ensureThatBookmarkCanTBeRemoved() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/Test";
@@ -849,7 +843,7 @@ class BookmarkManagerTest {
     }
 
     @Test
-    public void ensureThatBookmarkAreSortedByRating(){
+    public void ensureThatBookmarkAreSortedByRating() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/test";
@@ -886,7 +880,7 @@ class BookmarkManagerTest {
     }
 
     @Test
-    public void ensureThatBookmarkAreSortedByRating2(){
+    public void ensureThatBookmarkAreSortedByRating2() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/test";
@@ -926,7 +920,7 @@ class BookmarkManagerTest {
     }
 
     @Test
-    public void ensureThatBookmarkAreSortedByRating3(){
+    public void ensureThatBookmarkAreSortedByRating3() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/test";
@@ -962,7 +956,7 @@ class BookmarkManagerTest {
     }
 
     @Test
-    public void ensureThatBookmarkAreSortedByRating4(){
+    public void ensureThatBookmarkAreSortedByRating4() {
         // Arrange
         BookmarkManager bookmarkManager = new BookmarkManager();
         String url = "http://test.com/test";
@@ -1000,8 +994,6 @@ class BookmarkManagerTest {
         // Assert
         assertIterableEquals(expectedResult, actualResult);
     }
-
-
 
 
     @Test
@@ -1045,7 +1037,6 @@ class BookmarkManagerTest {
             Bookmark bookmark3 = new Bookmark(url3);
 
 
-
             bookmarkManager.getBookmarkArrayList().add(bookmark1);
             bookmarkManager.getBookmarkArrayList().add(bookmark2);
             bookmarkManager.getBookmarkArrayList().add(bookmark3);
@@ -1055,7 +1046,7 @@ class BookmarkManagerTest {
             actualResult.forEach(bookmark -> System.out.println(bookmark.getAddingTime()));
             // Assert
             assertIterableEquals(expectedResult, actualResult);
-        }catch (Exception e){
+        } catch (Exception e) {
             fail(e.toString());
         }
     }
@@ -1078,7 +1069,6 @@ class BookmarkManagerTest {
         bookmark2.setAddingTime(LocalDateTime.now());
         Thread.sleep(1000);
         bookmark1.setAddingTime(LocalDateTime.now());
-
 
 
         bookmarkManager.getBookmarkArrayList().add(bookmark1);
@@ -1127,53 +1117,53 @@ class BookmarkManagerTest {
     @Test
     public void testThatOneBookmarkMangersAreEquals() {
         // Arrange
-        BookmarkManager bookmarkManager =new BookmarkManager();
+        BookmarkManager bookmarkManager = new BookmarkManager();
         // Assert & Act
-        assertEquals(bookmarkManager,bookmarkManager);
+        assertEquals(bookmarkManager, bookmarkManager);
     }
 
     @Test
     public void testThatTowBookmarkMangersAreEquals() {
         // Arrange
-            BookmarkManager bookmarkManager1=new BookmarkManager();
-            BookmarkManager bookmarkManager2=new BookmarkManager();
+        BookmarkManager bookmarkManager1 = new BookmarkManager();
+        BookmarkManager bookmarkManager2 = new BookmarkManager();
 
-            String url = "http://test.com/test";
+        String url = "http://test.com/test";
 
-            List<Bookmark> bookmarkArrayList = new ArrayList<Bookmark>();
-            bookmarkArrayList.add(new Bookmark(url));
+        List<Bookmark> bookmarkArrayList = new ArrayList<Bookmark>();
+        bookmarkArrayList.add(new Bookmark(url));
 
-            bookmarkManager1.setBookmarkArrayList(bookmarkArrayList);
-            bookmarkManager2.setBookmarkArrayList(bookmarkArrayList);
+        bookmarkManager1.setBookmarkArrayList(bookmarkArrayList);
+        bookmarkManager2.setBookmarkArrayList(bookmarkArrayList);
         // Assert & Act
-             assertEquals(bookmarkManager1,bookmarkManager2);
+        assertEquals(bookmarkManager1, bookmarkManager2);
     }
 
     @Test
     public void testThatTowBookmarkMangersAreNotEquals1() {
         // Arrange
-        BookmarkManager bookmarkManager1=new BookmarkManager();
-        String bookmarkManager2="";
+        BookmarkManager bookmarkManager1 = new BookmarkManager();
+        String bookmarkManager2 = "";
 
         // Assert & Act
-        assertNotEquals(bookmarkManager1,bookmarkManager2);
+        assertNotEquals(bookmarkManager1, bookmarkManager2);
     }
 
     @Test
     public void testThatTowBookmarkMangersAreNotEquals2() {
         // Arrange
-        BookmarkManager bookmarkManager1=new BookmarkManager();
-        BookmarkManager bookmarkManager2=null;
+        BookmarkManager bookmarkManager1 = new BookmarkManager();
+        BookmarkManager bookmarkManager2 = null;
 
         // Assert & Act
-        assertNotEquals(bookmarkManager1,bookmarkManager2);
+        assertNotEquals(bookmarkManager1, bookmarkManager2);
     }
 
     @Test
     public void testThatTowBookmarkMangersAreNotEquals3() {
-           // Arrange
-        BookmarkManager bookmarkManager1=new BookmarkManager();
-        BookmarkManager bookmarkManager2=new BookmarkManager();
+        // Arrange
+        BookmarkManager bookmarkManager1 = new BookmarkManager();
+        BookmarkManager bookmarkManager2 = new BookmarkManager();
 
         String url = "http://test.com/test";
 
@@ -1182,7 +1172,7 @@ class BookmarkManagerTest {
         bookmarkManager2.setBookmarkArrayList(new ArrayList<Bookmark>());
         bookmarkArrayList.add(new Bookmark(url));
         // Assert & Act
-        assertNotEquals(bookmarkManager1,bookmarkManager2);
+        assertNotEquals(bookmarkManager1, bookmarkManager2);
     }
 
 }

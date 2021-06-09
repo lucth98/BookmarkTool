@@ -20,64 +20,62 @@ class UserTest {
     @Test
     public void ensureThatBookmarkMangerHasBeSaved() {
         // Arrange
-        User user =new User();
+        User user = new User();
 
-        BookmarkManager bookmarkManager =user.getBookmarkManager();
+        BookmarkManager bookmarkManager = user.getBookmarkManager();
 
         String url1 = "http://test.com/Test";
         String url2 = "http://tester.com/Test";
         String tag1 = "test";
         String tag2 = "tester";
 
-        Bookmark bookmark1 =new Bookmark(url1,tag1);
-        Bookmark bookmark2 =new Bookmark(url2,tag2);
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
 
         bookmarkManager.getBookmarkArrayList().add(bookmark1);
         bookmarkManager.getBookmarkArrayList().add(bookmark2);
 
-        String fileName="file.txt";
+        String fileName = "file.txt";
         // Act
 
         try {
             user.saveBookmarkManager(fileName);
-            File file=new File(fileName);
+            File file = new File(fileName);
             //Assert
             assertTrue(file.exists());
 
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
             fail();
         }
     }
 
 
-
-
     @Test
     public void ensureThatBookmarkMangerCanBeSaved() {
         // Arrange
-        User user =new User();
+        User user = new User();
 
-        BookmarkManager bookmarkManager =user.getBookmarkManager();
+        BookmarkManager bookmarkManager = user.getBookmarkManager();
 
         String url1 = "http://test.com/Test";
         String url2 = "http://tester.com/Test";
         String tag1 = "test";
         String tag2 = "tester";
 
-        Bookmark bookmark1 =new Bookmark(url1,tag1);
-        Bookmark bookmark2 =new Bookmark(url2,tag2);
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
 
         bookmarkManager.getBookmarkArrayList().add(bookmark1);
         bookmarkManager.getBookmarkArrayList().add(bookmark2);
 
-        String fileName="file.txt";
+        String fileName = "file.txt";
         // Act &  Assert
 
         try {
             user.saveBookmarkManager(fileName);
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
             fail();
         }
@@ -87,24 +85,26 @@ class UserTest {
     @Test
     public void ensureThatBookmarkMangerCanNotBeSaved1() {
         // Arrange
-        User user =new User();
+        User user = new User();
 
-        BookmarkManager bookmarkManager =user.getBookmarkManager();
+        BookmarkManager bookmarkManager = user.getBookmarkManager();
 
         String url1 = "http://test.com/Test";
         String url2 = "http://tester.com/Test";
         String tag1 = "test";
         String tag2 = "tester";
 
-        Bookmark bookmark1 =new Bookmark(url1,tag1);
-        Bookmark bookmark2 =new Bookmark(url2,tag2);
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
 
         bookmarkManager.getBookmarkArrayList().add(bookmark1);
         bookmarkManager.getBookmarkArrayList().add(bookmark2);
 
-        String fileName=null;
+        String fileName = null;
         // Act &  Assert
-        NullPointerException nullPointerException=assertThrows(NullPointerException.class,()-> {user.saveBookmarkManager(fileName);});
+        NullPointerException nullPointerException = assertThrows(NullPointerException.class, () -> {
+            user.saveBookmarkManager(fileName);
+        });
 
 
     }
@@ -112,34 +112,36 @@ class UserTest {
     @Test
     public void ensureThatBookmarkMangerCanNotBeSaved2() {
         // Arrange
-        User user =new User();
+        User user = new User();
 
-        BookmarkManager bookmarkManager =user.getBookmarkManager();
+        BookmarkManager bookmarkManager = user.getBookmarkManager();
 
         String url1 = "http://test.com/Test";
         String url2 = "http://tester.com/Test";
         String tag1 = "test";
         String tag2 = "tester";
 
-        Bookmark bookmark1 =new Bookmark(url1,tag1);
-        Bookmark bookmark2 =new Bookmark(url2,tag2);
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
 
         bookmarkManager.getBookmarkArrayList().add(bookmark1);
         bookmarkManager.getBookmarkArrayList().add(bookmark2);
 
-        String fileName="";
+        String fileName = "";
         // Act &  Assert
-         IOException ioException =assertThrows(IOException.class,()-> {user.saveBookmarkManager(fileName);});
+        IOException ioException = assertThrows(IOException.class, () -> {
+            user.saveBookmarkManager(fileName);
+        });
 
     }
 
     @Test
     public void ensureThatBookmarkMangerCanBeLoaded() {
         // Arrange
-        User user =new User();
+        User user = new User();
 
-        BookmarkManager expectedResult =user.getBookmarkManager();
-        BookmarkManager actualResult =user.getBookmarkManager();
+        BookmarkManager expectedResult = user.getBookmarkManager();
+        BookmarkManager actualResult = user.getBookmarkManager();
 
 
         String url1 = "http://test.com/Test";
@@ -147,67 +149,72 @@ class UserTest {
         String tag1 = "test";
         String tag2 = "tester";
 
-        Bookmark bookmark1 =new Bookmark(url1,tag1);
-        Bookmark bookmark2 =new Bookmark(url2,tag2);
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
 
         expectedResult.getBookmarkArrayList().add(bookmark1);
         expectedResult.getBookmarkArrayList().add(bookmark2);
 
-        String fileName="testfile.txt";
+        String fileName = "testfile.txt";
         // Act
 
         try {
             user.saveBookmarkManager(fileName);
-            actualResult=user.loadBookmarkManager(fileName);
-        }catch (Exception e){
+            actualResult = user.loadBookmarkManager(fileName);
+        } catch (Exception e) {
             System.out.println(e);
             fail();
         }
         //Assert
-    assertEquals(expectedResult,actualResult);
+        assertEquals(expectedResult, actualResult);
     }
-
 
 
     @Test
     public void ensureThatBookmarkMangerCanNotBeLoaded1() {
         // Arrange
-        User user =new User();
-        String fileName="NoFile.txt";
+        User user = new User();
+        String fileName = "NoFile.txt";
         // Act & Assert
 
-        FileNotFoundException fileNotFoundException=assertThrows(FileNotFoundException.class,()-> {user.loadBookmarkManager(fileName);});
+        FileNotFoundException fileNotFoundException = assertThrows(FileNotFoundException.class, () -> {
+            user.loadBookmarkManager(fileName);
+        });
     }
 
     @Test
     public void ensureThatBookmarkMangerCanNotBeLoaded2() {
         // Arrange
-        User user =new User();
-        String fileName="";
+        User user = new User();
+        String fileName = "";
         // Act & Assert
 
-        FileNotFoundException fileNotFoundException=assertThrows(FileNotFoundException.class,()-> {user.loadBookmarkManager(fileName);});
+        FileNotFoundException fileNotFoundException = assertThrows(FileNotFoundException.class, () -> {
+            user.loadBookmarkManager(fileName);
+        });
     }
 
     @Test
     public void ensureThatBookmarkMangerCanNotBeLoaded3() {
         // Arrange
-        User user =new User();
-        String fileName=null;
+        User user = new User();
+        String fileName = null;
 
         // Act & Assert
 
-        NullPointerException nullPointerException=assertThrows(NullPointerException.class,()-> {user.loadBookmarkManager(fileName);});
+        NullPointerException nullPointerException = assertThrows(NullPointerException.class, () -> {
+            user.loadBookmarkManager(fileName);
+        });
     }
 
     @Test
     public void ensureThatBookmarkMangerCanBeRestored() {
         // Arrange
-        User user =new User();
-        User newuser =new User();
+        User user = new User();
+        User newuser = new User();
 
-        BookmarkManager expectedResult =user.getBookmarkManager();
-        BookmarkManager actualResult ;
+        BookmarkManager expectedResult = user.getBookmarkManager();
+        BookmarkManager actualResult;
 
 
         String url1 = "http://test.com/Test";
@@ -215,23 +222,23 @@ class UserTest {
         String tag1 = "test";
         String tag2 = "tester";
 
-        Bookmark bookmark1 =new Bookmark(url1,tag1);
-        Bookmark bookmark2 =new Bookmark(url2,tag2);
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
 
         expectedResult.getBookmarkArrayList().add(bookmark1);
         expectedResult.getBookmarkArrayList().add(bookmark2);
 
-        String fileName="backUpFile.txt";
+        String fileName = "backUpFile.txt";
         // Act
 
         try {
             user.saveBookmarkManager(fileName);
             newuser.restoreBookmarks(fileName);
-            actualResult=newuser.getBookmarkManager();
+            actualResult = newuser.getBookmarkManager();
             //Assert
-            assertEquals(expectedResult,actualResult);
+            assertEquals(expectedResult, actualResult);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
             fail();
         }
@@ -241,12 +248,12 @@ class UserTest {
     @Test
     public void ensureThatBackupHasBeenCreated() {
         // Arrange
-        User user =new User();
-        String username="newTestUser";
+        User user = new User();
+        String username = "newTestUser";
 
         user.setUsername(username);
-        BookmarkManager expectedResult =user.getBookmarkManager();
-        BookmarkManager actualResult =user.getBookmarkManager();
+        BookmarkManager expectedResult = user.getBookmarkManager();
+        BookmarkManager actualResult = user.getBookmarkManager();
 
 
         String url1 = "http://test.com/Test";
@@ -254,22 +261,22 @@ class UserTest {
         String tag1 = "test";
         String tag2 = "tester";
 
-        Bookmark bookmark1 =new Bookmark(url1,tag1);
-        Bookmark bookmark2 =new Bookmark(url2,tag2);
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
 
         expectedResult.getBookmarkArrayList().add(bookmark1);
         expectedResult.getBookmarkArrayList().add(bookmark2);
 
-        String fileName=username+"Backup_NR:1";
+        String fileName = username + "Backup_NR:1";
         // Act
         try {
             user.generateBackUp();
 
-            File file=new File(fileName);
+            File file = new File(fileName);
             //Assert
             assertTrue(file.exists());
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
             fail();
         }
@@ -279,14 +286,13 @@ class UserTest {
     @Test
     public void ensureThatBackupHasBeenCreated2() {
         // Arrange
-        User user =new User();
-        String username="newTestUser";
-        int backUpNr=2;
+        User user = new User();
+        String username = "newTestUser";
+        int backUpNr = 2;
 
         user.setBackUpNr(backUpNr);
         user.setUsername(username);
-        BookmarkManager expectedResult =user.getBookmarkManager();
-        BookmarkManager actualResult =user.getBookmarkManager();
+        BookmarkManager bookmarkManager = user.getBookmarkManager();
 
 
         String url1 = "http://test.com/Test";
@@ -294,26 +300,25 @@ class UserTest {
         String tag1 = "test";
         String tag2 = "tester";
 
-        Bookmark bookmark1 =new Bookmark(url1,tag1);
-        Bookmark bookmark2 =new Bookmark(url2,tag2);
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
 
-        expectedResult.getBookmarkArrayList().add(bookmark1);
-        expectedResult.getBookmarkArrayList().add(bookmark2);
+        bookmarkManager.getBookmarkArrayList().add(bookmark1);
+        bookmarkManager.getBookmarkArrayList().add(bookmark2);
 
-        String fileName=username+"Backup_NR:"+backUpNr;
+        String fileName = username + "Backup_NR:" + backUpNr;
         // Act
         try {
             user.generateBackUp();
 
-            File file=new File(fileName);
+            File file = new File(fileName);
             //Assert
             assertTrue(file.exists());
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
             fail();
         }
-
     }
 
 //
@@ -353,14 +358,6 @@ class UserTest {
 //            fail();
 //        }
 //    }
-
-
-
-
-
-
-
-
 
 
 }

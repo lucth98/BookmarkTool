@@ -5,12 +5,11 @@ import org.mockito.Spy;
 import java.io.*;
 
 public class User {
-    private String username="";
+    private String username = "";
 
-    private BookmarkManager bookmarkManager =new BookmarkManager();
+    private BookmarkManager bookmarkManager = new BookmarkManager();
 
-    private int backUpNr=1;
-
+    private int backUpNr = 1;
 
 
     public void setBackUpNr(int backUpNr) {
@@ -29,23 +28,22 @@ public class User {
         this.username = username;
     }
 
-    public void saveBookmarkManager(String fileName)  throws IOException, ClassNotFoundException,Exception{
+    public void saveBookmarkManager(String fileName) throws IOException, ClassNotFoundException, Exception {
 
         FileOutputStream fileOutputStream = new FileOutputStream(fileName);
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-       // spyedObjectOutputStream =(objectOutputStream);
+        // spyedObjectOutputStream =(objectOutputStream);
         objectOutputStream.writeObject(this.bookmarkManager);
         objectOutputStream.flush();
         objectOutputStream.close();
 
 
-
     }
 
-    public BookmarkManager loadBookmarkManager(String fileName) throws IOException, ClassNotFoundException,Exception {
+    public BookmarkManager loadBookmarkManager(String fileName) throws IOException, ClassNotFoundException, Exception {
         FileInputStream fileInputStream = new FileInputStream(fileName);
-       ObjectInputStream objectInputStream  = new ObjectInputStream(fileInputStream);
-      // spyedObjectInputStream=(objectInputStream);
+        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+        // spyedObjectInputStream=(objectInputStream);
         BookmarkManager bookmarkManager = (BookmarkManager) objectInputStream.readObject();
         objectInputStream.close();
         return bookmarkManager;
@@ -54,16 +52,16 @@ public class User {
     public void restoreBookmarks(String fileName) {
         try {
             this.bookmarkManager = loadBookmarkManager(fileName);
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
 
     public void generateBackUp() {
         try {
-           saveBookmarkManager(username+"Backup_NR:"+backUpNr);
-           backUpNr++;
-        }catch (Exception e){
+            saveBookmarkManager(username + "Backup_NR:" + backUpNr);
+            backUpNr++;
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
