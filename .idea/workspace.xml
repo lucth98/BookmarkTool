@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkAreNotSortedByDate">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Bookmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkMangerCanBeRestored">
       <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,13 +170,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00006" summary="url validation + test">
-      <created>1620395159646</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1620395159646</updated>
     </task>
     <task id="LOCAL-00007" summary="secure urls and rating increase + tests">
       <created>1620396964788</created>
@@ -520,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623166512395</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="+ensureThatBookmarkMangerCanBeRestored">
+      <created>1623274574598</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1623274574598</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +533,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sorting by rating tests" />
     <MESSAGE value="sorting by date test case" />
     <MESSAGE value="+ repaired equals" />
     <MESSAGE value="- toString" />
@@ -564,6 +557,7 @@
     <MESSAGE value="+ensureThatUserCanNotAddOneTagToBookmark2" />
     <MESSAGE value="+ensureThatTakCanTBeRemoved2&#10;+ensureThatTakCanTBeRemoved3" />
     <MESSAGE value="+ensureThatBookmarkAreNotSortedByDate" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkAreNotSortedByDate" />
+    <MESSAGE value="+ensureThatBookmarkMangerCanBeRestored" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkMangerCanBeRestored" />
   </component>
 </project>

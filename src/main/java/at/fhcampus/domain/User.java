@@ -37,5 +37,10 @@ private BookmarkManager bookmarkManager =new BookmarkManager();
     }
 
     public void restoreBookmarks(String fileName) {
+        try {
+            this.bookmarkManager = loadBookmarkManager(fileName);
+        }catch (Exception e){
+            System.out.println(e);
+        }
     }
 }
