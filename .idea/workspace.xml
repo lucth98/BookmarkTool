@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+testHashCode">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+testTowBookmarksareNotEqual2">
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,23 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.testTowBookmarksareNotEqual2">
-    <configuration name="UserTest.testHashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="testHashCode" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserTest.testTowBookmarksareNotEqual3">
     <configuration name="UserTest.testOneBookmarksareEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -149,13 +132,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.testTowBookmarksareNotEqual3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
+      <option name="METHOD_NAME" value="testTowBookmarksareNotEqual3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.testTowBookmarksareNotEqual3" />
         <item itemvalue="JUnit.UserTest.testTowBookmarksareNotEqual2" />
         <item itemvalue="JUnit.UserTest.testTowBookmarksareNotEqual1" />
         <item itemvalue="JUnit.UserTest.testOneBookmarksareEqual" />
         <item itemvalue="JUnit.UserTest.testTowBookmarksareEqual" />
-        <item itemvalue="JUnit.UserTest.testHashCode" />
       </list>
     </recent_temporary>
   </component>
@@ -171,27 +170,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00043" summary="+ensureThatBookmarkMangerCanNotBeLoaded1">
-      <created>1623160316827</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1623160316827</updated>
-    </task>
-    <task id="LOCAL-00044" summary="+ensureThatBookmarkMangerCanNotBeLoaded2">
-      <created>1623160379382</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1623160379382</updated>
-    </task>
-    <task id="LOCAL-00045" summary="+ensureThatBookmarkMangerCanNotBeLoaded3">
-      <created>1623160451426</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1623160451426</updated>
     </task>
     <task id="LOCAL-00046" summary="+testThatOneBookmarkMangersAreEquals">
       <created>1623162226938</created>
@@ -515,7 +493,28 @@
       <option name="project" value="LOCAL" />
       <updated>1623341510920</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="+testTowBookmarksareEqual">
+      <created>1623341932429</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1623341932429</updated>
+    </task>
+    <task id="LOCAL-00093" summary="+testTowBookmarksareNotEqual1">
+      <created>1623342080340</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1623342080340</updated>
+    </task>
+    <task id="LOCAL-00094" summary="+testTowBookmarksareNotEqual2">
+      <created>1623342128689</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1623342128689</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,9 +533,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ensureThatBackupHasBeenCreated2" />
-    <MESSAGE value="+reformat Code" />
-    <MESSAGE value="+testhashCode" />
     <MESSAGE value="+ensureThatBackupNumberHasIncreast" />
     <MESSAGE value="+ensureThatBackupHasNotBeenCreated" />
     <MESSAGE value="+ensureThatBackupHasNotBeenCreated2" />
@@ -559,6 +555,9 @@
     <MESSAGE value="+refactor" />
     <MESSAGE value="+TestReadLine" />
     <MESSAGE value="+testHashCode" />
-    <option name="LAST_COMMIT_MESSAGE" value="+testHashCode" />
+    <MESSAGE value="+testTowBookmarksareEqual" />
+    <MESSAGE value="+testTowBookmarksareNotEqual1" />
+    <MESSAGE value="+testTowBookmarksareNotEqual2" />
+    <option name="LAST_COMMIT_MESSAGE" value="+testTowBookmarksareNotEqual2" />
   </component>
 </project>
