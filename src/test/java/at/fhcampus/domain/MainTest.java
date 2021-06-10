@@ -26,6 +26,7 @@ class MainTest {
 
         String expectedResult="test";
         String actualResult="";
+
         String data = expectedResult+"\r\n";
         InputStream inputStream = System.in;
         try {
@@ -41,6 +42,7 @@ class MainTest {
         } catch (Exception e){
             System.setIn(inputStream);
             System.out.println(e);
+            fail();
         }
         finally {
             System.setIn(inputStream);
@@ -55,10 +57,13 @@ class MainTest {
         Main main=new Main();
 
         String scannerInput="testUser";
+
         User actualResult=null;
         User expectedResult=new User();
         expectedResult.setUsername(scannerInput);
-        String data = scannerInput+"\r\n";
+
+
+        String data = scannerInput+"\r\n"+"g,gre,ger"+"\n";
         InputStream inputStream = System.in;
         try {
             System.setIn(new ByteArrayInputStream(data.getBytes()));
@@ -68,11 +73,13 @@ class MainTest {
 
             //Assert
 
-            assertEquals(scannerInput,actualResult);
+            assertEquals(expectedResult,actualResult);
 
         } catch (Exception e){
             System.setIn(inputStream);
+            System.out.println(actualResult);
             System.out.println(e);
+            fail();
         }
         finally {
             System.setIn(inputStream);

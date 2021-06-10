@@ -15,6 +15,17 @@ public class Main {
     }
 
     public User generateUser() {
-        return null;
+        Scanner scanner =new Scanner(System.in);
+        User user=new User();
+        String input="";
+        do {
+            input=scanner.nextLine();
+            System.out.println(input);
+
+        }while (input.equals(""));
+
+        user.setUsername(input);
+        return user;
+
     }
 }
