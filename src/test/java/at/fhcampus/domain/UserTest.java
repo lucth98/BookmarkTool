@@ -49,6 +49,11 @@ class UserTest {
             assertTrue(file.exists());
 
 
+
+            deleteFile = new File(fileName);
+            deleteFile.delete();
+
+
         } catch (Exception e) {
             System.out.println(e);
             fail();
@@ -79,6 +84,11 @@ class UserTest {
 
         try {
             user.saveBookmarkManager(fileName);
+
+
+
+            File deleteFile = new File(fileName);
+            deleteFile.delete();
         } catch (Exception e) {
             System.out.println(e);
             fail();
@@ -249,6 +259,9 @@ class UserTest {
             //Assert
             assertEquals(expectedResult, actualResult);
 
+            deleteFile = new File(fileName);
+            deleteFile.delete();
+
         } catch (Exception e) {
             System.out.println(e);
             fail();
@@ -317,6 +330,9 @@ class UserTest {
             //Assert
             assertTrue(file.exists());
 
+            deleteFile = new File(fileName);
+            deleteFile.delete();
+
         } catch (Exception e) {
             System.out.println(e);
             fail();
@@ -359,6 +375,10 @@ class UserTest {
             File file = new File(fileName);
             //Assert
             assertTrue(file.exists());
+
+
+             deleteFile = new File(fileName);
+            deleteFile.delete();
 
         } catch (Exception e) {
             System.out.println(e);
