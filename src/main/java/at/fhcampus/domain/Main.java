@@ -32,7 +32,7 @@ public class Main {
             return user.getBookmarkManager().getBookmark(input);
     }
 
-    private String readLine(String message) {
+    public String readLine(String message) {
         Scanner scanner =new Scanner(System.in);
         String input;
         do {

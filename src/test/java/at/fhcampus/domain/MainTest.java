@@ -51,6 +51,39 @@ class MainTest {
     }
 
     @Test
+    public void TestReadLine() {
+        // Arrange
+
+        Main main=new Main();
+
+        String expectedResult="test";
+        String actualResult="";
+
+        String data ="\r\n"+"\r\n"+"\r\n"+ expectedResult+"\r\n";
+        InputStream inputStream = System.in;
+        try {
+            System.setIn(new ByteArrayInputStream(data.getBytes()));
+
+            // Act
+            actualResult =main.readLine("testing");
+
+            //Assert
+
+            assertEquals(expectedResult,actualResult);
+
+        } catch (Exception e){
+            System.setIn(inputStream);
+            System.out.println(e);
+            fail();
+        }
+        finally {
+            System.setIn(inputStream);
+            System.out.println(actualResult);
+        }
+    }
+
+
+    @Test
     public void testUserCreation(){
         // Arrange
 
