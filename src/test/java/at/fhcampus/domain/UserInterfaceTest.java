@@ -214,7 +214,7 @@ class UserInterfaceTest {
             System.out.println(expectedResult);
         }
     }
-
+//
 //    @Test
 //    public void TestMenu1(){
 //        // Arrange
@@ -235,13 +235,13 @@ class UserInterfaceTest {
 //
 //        String input="1";
 //
-//        String data = "\r\n"+input+"\r\n"+url+"\r\n"+url+"\r\n"+url+"\r\n";
+//        String data = input+"\r\n";
 //        InputStream inputStream = System.in;
 //        try {
 //            System.setIn(new ByteArrayInputStream(data.getBytes()));
 //
 //            // Act
-//           String result =main.menu(user);
+//           int result =main.menu(user);
 //           actualResult=user.getBookmarkManager().getBookmarkArrayList();
 //
 //            //Assert
@@ -258,6 +258,7 @@ class UserInterfaceTest {
 //            System.setIn(inputStream);
 //            System.out.println(actualResult);
 //        }
+//
 //    }
 
 }
