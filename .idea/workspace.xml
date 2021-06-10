@@ -170,13 +170,6 @@
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
     </task>
-    <task id="LOCAL-00056" summary="+restoreBookmarks">
-      <created>1623274897862</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1623274897862</updated>
-    </task>
     <task id="LOCAL-00057" summary="+ensureThatBookmarkMangerHasBeSaved">
       <created>1623275046069</created>
       <option name="number" value="00057" />
@@ -513,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623345546118</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="+TestReadLineOutput">
+      <created>1623345722630</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1623345722630</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

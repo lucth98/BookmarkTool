@@ -197,7 +197,7 @@ class UserInterfaceTest {
             main.readLine(expectedResult);
             actualResult=byteArrayOutputStream.toString().replaceAll("\\s", "");
             expectedResult.replaceAll("\\s", "");
-
+            //Assert
             assertEquals(expectedResult,actualResult);
         } catch (Exception e){
             System.setIn(inputStream);
