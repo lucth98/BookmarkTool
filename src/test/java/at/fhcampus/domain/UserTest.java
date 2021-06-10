@@ -39,6 +39,10 @@ class UserTest {
         // Act
 
         try {
+            File deleteFile = new File(fileName);
+            deleteFile.delete();
+
+
             user.saveBookmarkManager(fileName);
             File file = new File(fileName);
             //Assert
@@ -159,6 +163,10 @@ class UserTest {
         // Act
 
         try {
+            File deleteFile = new File(fileName);
+            deleteFile.delete();
+
+
             user.saveBookmarkManager(fileName);
             actualResult = user.loadBookmarkManager(fileName);
         } catch (Exception e) {
@@ -232,6 +240,9 @@ class UserTest {
         // Act
 
         try {
+            File deleteFile = new File(fileName);
+            deleteFile.delete();
+
             user.saveBookmarkManager(fileName);
             newUser.restoreBookmarks(fileName);
             actualResult = newUser.getBookmarkManager();
@@ -296,6 +307,10 @@ class UserTest {
         String fileName = username + "Backup_NR:1";
         // Act
         try {
+            File deleteFile = new File(fileName);
+            deleteFile.delete();
+
+
             user.generateBackUp();
 
             File file = new File(fileName);
@@ -335,6 +350,10 @@ class UserTest {
         String fileName = username + "Backup_NR:" + backUpNr;
         // Act
         try {
+            File deleteFile = new File(fileName);
+            deleteFile.delete();
+
+
             user.generateBackUp();
 
             File file = new File(fileName);
@@ -387,6 +406,9 @@ class UserTest {
         int expectedValue=2;
         // Act
         try {
+
+
+
             user.generateBackUp();
             int actualValue=  user.getBackUpNr();
             //Assert
