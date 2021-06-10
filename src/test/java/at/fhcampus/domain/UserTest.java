@@ -520,6 +520,23 @@ class UserTest {
         // Act & Assert
         assertNotEquals(actualValue, expectedValue);
     }
+    @Test
+    public void testTowBookmarksareNotEqual2() {
+        // Arrange
+        User actualValue=new User();
+        User expectedValue=null;
+        String username="test";
+        int backupNr=2;
+        BookmarkManager bookmarkManager =new BookmarkManager();
+
+        actualValue.setUsername(username);
+        actualValue.setBackUpNr(backupNr);
+        actualValue.setBookmarkManager(bookmarkManager);
+
+
+        // Act & Assert
+        assertNotEquals(actualValue, expectedValue);
+    }
 
 
 
