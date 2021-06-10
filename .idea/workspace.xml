@@ -67,7 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeRestored">
+  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeRestored2">
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -79,22 +79,6 @@
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.ensureThatBackupHasNorBeenCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBackupHasNorBeenCreated" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,13 +131,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeRestored2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeRestored2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeRestored2" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeRestored" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasNotBeenCreated2" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasNotBeenCreated" />
-        <item itemvalue="JUnit.UserTest.ensureThatBackupHasNorBeenCreated" />
       </list>
     </recent_temporary>
   </component>
