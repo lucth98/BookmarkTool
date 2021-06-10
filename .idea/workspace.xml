@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+testTowBookmarksareNotEqual4">
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+testToString">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserInterfaceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,12 +64,72 @@
     <option name="myCommands">
       <command value="mvn test jacoco:report" />
       <command value="mvn clean install test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
-      <command value="mvn clean install" />
       <command value="mvn clean install  test jacoco:report org.pitest:pitest-maven:mutationCoverage -DhistoryInputFile=target/fasterPitMutationTesting-history.txt -DhistoryOutputFile=target/fasterPitMutationTesting-history.txt -Dsonar.pitest.mode=reuseReport -Dthreads=4 -DtimestampedReports=false" />
+      <command value="mvn clean install" />
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.testToString">
+  <component name="RunManager" selected="JUnit.UserInterfaceTest">
+    <configuration name="BookmarkManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookmarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserInterfaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserInterfaceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -85,77 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.testTowBookmarksareNotEqual2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="testTowBookmarksareNotEqual2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.testTowBookmarksareNotEqual3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="testTowBookmarksareNotEqual3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.testTowBookmarksareNotEqual4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="testTowBookmarksareNotEqual4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.testTowBookmarksareNotEqual5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="testTowBookmarksareNotEqual5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserInterfaceTest" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.BookmarkTest" />
+        <item itemvalue="JUnit.BookmarkManagerTest" />
         <item itemvalue="JUnit.UserTest.testToString" />
-        <item itemvalue="JUnit.UserTest.testTowBookmarksareNotEqual5" />
-        <item itemvalue="JUnit.UserTest.testTowBookmarksareNotEqual4" />
-        <item itemvalue="JUnit.UserTest.testTowBookmarksareNotEqual3" />
-        <item itemvalue="JUnit.UserTest.testTowBookmarksareNotEqual2" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00048" summary="+testThatTowBookmarkMangersAreNotEquals1">
-      <created>1623162653562</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1623162653562</updated>
     </task>
     <task id="LOCAL-00049" summary="+testThatTowBookmarkMangersAreNotEquals2">
       <created>1623162753844</created>
@@ -515,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623342243943</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="+testToString">
+      <created>1623342655693</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1623342655693</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +531,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ensureThatBackupHasNotBeenCreated2" />
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeRestored" />
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeRestored2" />
     <MESSAGE value="+" />
@@ -559,6 +555,7 @@
     <MESSAGE value="+testTowBookmarksareNotEqual2" />
     <MESSAGE value="+testTowBookmarksareNotEqual3" />
     <MESSAGE value="+testTowBookmarksareNotEqual4" />
-    <option name="LAST_COMMIT_MESSAGE" value="+testTowBookmarksareNotEqual4" />
+    <MESSAGE value="+testToString" />
+    <option name="LAST_COMMIT_MESSAGE" value="+testToString" />
   </component>
 </project>

@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
-class MainTest {
+class UserInterfaceTest {
 
 
         //test if scanner cann be set

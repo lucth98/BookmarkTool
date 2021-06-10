@@ -128,7 +128,7 @@
                 <version>${jacoco.maven.version}</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/ui/**/*</exclude>
+                       <!-- <exclude>**/ui/**/*</exclude>-->
                     </excludes>
                 </configuration>
                 <executions>
