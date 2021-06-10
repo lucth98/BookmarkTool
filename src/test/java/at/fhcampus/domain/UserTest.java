@@ -555,12 +555,30 @@ class UserTest {
         expectedValue.setBookmarkManager(bookmarkManager);
         expectedValue.setBackUpNr(backupNr);
 
-
-
         // Act & Assert
         assertNotEquals(actualValue, expectedValue);
     }
 
+    @Test
+    public void testTowBookmarksareNotEqual4() {
+        // Arrange
+        User actualValue=new User();
+        User expectedValue=new User();
+        String username="test";
+        int backupNr=2;
+        BookmarkManager bookmarkManager =new BookmarkManager();
+
+        actualValue.setUsername(username);
+        actualValue.setBackUpNr(backupNr);
+        actualValue.setBookmarkManager(bookmarkManager);
+
+        expectedValue.setUsername(username);
+        expectedValue.setBookmarkManager(bookmarkManager);
+        expectedValue.setBackUpNr(5);
+
+        // Act & Assert
+        assertNotEquals(actualValue, expectedValue);
+    }
 
 
 
