@@ -26,11 +26,6 @@ public class BookmarkManager implements Serializable {
                 }
             }
             Bookmark bookmark = new Bookmark(url);
-            /*DateTimeFormatter dateTimeFormatter =DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-            LocalDateTime localDateTime= LocalDateTime.now().format(dateTimeFormatter.withLocale());
-
-
-            localDateTime.*/
 
             bookmark.setAddingTime(LocalDateTime.now());
             bookmarkArrayList.add(bookmark);
@@ -47,11 +42,7 @@ public class BookmarkManager implements Serializable {
             }
         });
 
-        /*for (Bookmark bookmark : bookmarkArrayList) {
-            if (bookmark.getUrl().equalsIgnoreCase(url)) {
-                bookmark.getTags().add(tag);
-            }
-        }*/
+
     }
 
     static public boolean validateURL(String url) {
@@ -88,10 +79,9 @@ public class BookmarkManager implements Serializable {
             URI uri = new URI(url);
             String domain = uri.getHost();
             returnValue = domain.startsWith("www.") ? domain.substring(4) : domain;
-            // return returnValue;
+
         } catch (Exception e) {
-            //   System.out.println(e.getMessage());
-            // returnValue=null;
+
         }
         return returnValue;
     }
@@ -120,50 +110,29 @@ public class BookmarkManager implements Serializable {
         for (Bookmark bookmark : bookmarkArrayList) {
             if (bookmark.getUrl().equalsIgnoreCase(url)) {
                 bookmark.getTags().removeIf(currentTag -> currentTag.equalsIgnoreCase(tag));
-/*               for (int i=0;i<bookmark.getTags().size();i++){
-                    if(bookmark.getTags().get(i).equalsIgnoreCase(tag)){
-                        bookmark.getTags().remove(i);
-                    }
-               }*/
+
             }
         }
 
     }
 
     public void removeBookmark(String url) {
-//        for (Bookmark bookmark:bookmarkArrayList) {
-//            if(bookmark.getUrl().equalsIgnoreCase(url)){
-//                bookmarkArrayList.remove(bookmark);
-//            }
-//        }
-/*        for (int i=0;i<bookmarkArrayList.size();i++){
-            if(bookmarkArrayList.get(i).getUrl().equalsIgnoreCase(url)){
-                bookmarkArrayList.remove(i);
-          }
-        }*/
+
         bookmarkArrayList.removeIf(currentBookmark -> currentBookmark.getUrl().equalsIgnoreCase(url));
     }
 
     public List<Bookmark> getSortedBookmarksByRating() {
         List<Bookmark> sortedList = new ArrayList<>(bookmarkArrayList);
-        sortedList.sort(new Comparator<Bookmark>() {
-            @Override
-            public int compare(Bookmark bookmark1, Bookmark bookmark2) {
-                return Integer.compare(bookmark2.getRating(), bookmark1.getRating());
-            }
-        });
+        sortedList.sort((bookmark1, bookmark2) -> Integer.compare(bookmark2.getRating(), bookmark1.getRating()));
         return sortedList;
     }
 
     public List<Bookmark> getSortedBookmarksByDate() {
         List<Bookmark> sortedList = new ArrayList<>(bookmarkArrayList);
-        sortedList.sort(new Comparator<Bookmark>() {
-            @Override
-            public int compare(Bookmark bookmark1, Bookmark bookmark2) {
-                if (bookmark1.getAddingTime() == null || bookmark2.getAddingTime() == null)
-                    return 0;
-                return bookmark2.getAddingTime().compareTo(bookmark1.getAddingTime());
-            }
+        sortedList.sort((bookmark1, bookmark2) -> {
+            if (bookmark1.getAddingTime() == null || bookmark2.getAddingTime() == null)
+                return 0;
+            return bookmark2.getAddingTime().compareTo(bookmark1.getAddingTime());
         });
         return sortedList;
     }
