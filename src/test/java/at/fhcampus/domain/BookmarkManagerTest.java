@@ -328,6 +328,22 @@ class BookmarkManagerTest {
 
     }
 
+
+    @Test
+    public void ensureDomainCanBeExtracted2() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url1 = "http://www.test.com/Test";
+
+        String expectedResult = "test.com";
+        // Act
+        String actualResult = bookmarkManager.getDomainName(url1);
+
+        // Assert
+        assertEquals(expectedResult, actualResult);
+
+    }
+
     @Test
     public void ensureDomainCanNotBeExtracted() {
         // Arrange

@@ -427,8 +427,6 @@ class UserTest {
         // Act
         try {
 
-
-
             user.generateBackUp();
             int actualValue=  user.getBackUpNr();
             //Assert

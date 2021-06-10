@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureDomainCanNotBeExtracted3">
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+refactor">
+      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +68,23 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureDomainCanBeExtracted2">
+    <configuration name="BookmarkManagerTest.ensureDomainCanBeExtracted2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureDomainCanBeExtracted2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookmarkManagerTest.ensureDomainCanNotBeExtracted2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -131,29 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.ensureThatBookmarkMangerHasBeSaved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBookmarkMangerHasBeSaved" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanBeExtracted2" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasBeenCreated2" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanNotBeExtracted3" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanNotBeExtracted2" />
-        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerHasBeSaved" />
       </list>
     </recent_temporary>
   </component>
@@ -169,13 +170,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00028" summary="sorting by rating tests">
-      <created>1621295262074</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1621295262075</updated>
     </task>
     <task id="LOCAL-00029" summary="sorting by date test case">
       <created>1621295814218</created>
@@ -513,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623332910969</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="+refactor">
+      <created>1623333291098</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1623333291098</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +533,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+testThatTowBookmarkMangersAreEquals" />
     <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals1" />
     <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals2" />
     <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals3" />
@@ -557,6 +557,7 @@
     <MESSAGE value="+refactoring" />
     <MESSAGE value="+ensureDomainCanNotBeExtracted2" />
     <MESSAGE value="+ensureDomainCanNotBeExtracted3" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ensureDomainCanNotBeExtracted3" />
+    <MESSAGE value="+refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="+refactor" />
   </component>
 </project>
