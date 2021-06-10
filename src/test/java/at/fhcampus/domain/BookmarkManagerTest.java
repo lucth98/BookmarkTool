@@ -353,6 +353,7 @@ class BookmarkManagerTest {
 
 
 
+
     @Test
     public void ensureSecureUrlsCountIsFour() {
         // Arrange

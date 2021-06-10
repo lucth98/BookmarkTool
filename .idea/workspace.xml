@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureDomainCanNotBeExtracted2">
+      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +168,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00025" summary="refactoring">
-      <created>1621292757778</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1621292757778</updated>
     </task>
     <task id="LOCAL-00026" summary="sorting by rating test case">
       <created>1621293455069</created>
@@ -512,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623331330921</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="+ensureDomainCanNotBeExtracted2">
+      <created>1623332675685</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1623332675686</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +531,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ensureThatBookmarkMangerCanNotBeLoaded3" />
     <MESSAGE value="+testThatOneBookmarkMangersAreEquals" />
     <MESSAGE value="+testThatTowBookmarkMangersAreEquals" />
     <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals1" />
@@ -556,6 +555,7 @@
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeRestored2" />
     <MESSAGE value="+" />
     <MESSAGE value="+refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="+refactoring" />
+    <MESSAGE value="+ensureDomainCanNotBeExtracted2" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ensureDomainCanNotBeExtracted2" />
   </component>
 </project>
