@@ -13,4 +13,8 @@ public class Main {
         Scanner scanner =new Scanner(System.in);
         return scanner.nextLine();
     }
+
+    public User generateUser() {
+        return null;
+    }
 }

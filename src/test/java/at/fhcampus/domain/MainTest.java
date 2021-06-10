@@ -19,7 +19,7 @@ class MainTest {
 
         //test if scanner cann be set
     @Test
-    public void     testIfScannerCannBeSet() {
+    public void testIfScannerCannBeSet() {
         // Arrange
 
         Main main=new Main();
@@ -46,9 +46,46 @@ class MainTest {
             System.setIn(inputStream);
             System.out.println(actualResult);
         }
+    }
+
+    @Test
+    public void testUserCreation(){
+        // Arrange
+
+        Main main=new Main();
+
+        String scannerInput="testUser";
+        User actualResult=null;
+        User expectedResult=new User();
+        expectedResult.setUsername(scannerInput);
+        String data = scannerInput+"\r\n";
+        InputStream inputStream = System.in;
+        try {
+            System.setIn(new ByteArrayInputStream(data.getBytes()));
+
+            // Act
+            actualResult =main.generateUser();
+
+            //Assert
+
+            assertEquals(scannerInput,actualResult);
+
+        } catch (Exception e){
+            System.setIn(inputStream);
+            System.out.println(e);
+        }
+        finally {
+            System.setIn(inputStream);
+            System.out.println(actualResult);
+        }
+
 
 
     }
+
+
+
+
 
 
 
