@@ -21,6 +21,10 @@ public class User {
         return bookmarkManager;
     }
 
+    public void setBookmarkManager(BookmarkManager bookmarkManager) {
+        this.bookmarkManager = bookmarkManager;
+    }
+
     public int getBackUpNr() {
         return backUpNr;
     }

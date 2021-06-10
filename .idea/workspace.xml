@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+getBookmark">
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+TestReadLine">
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.TestreadLine">
+  <component name="RunManager" selected="JUnit.UserTest.testHashCode">
     <configuration name="BookmarkManagerTest.testGetBookmark" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -80,22 +80,6 @@
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
       <option name="METHOD_NAME" value="testGetBookmark" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookmarkTest.testhashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
-      <option name="METHOD_NAME" value="testhashCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,13 +132,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.testHashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
+      <option name="METHOD_NAME" value="testHashCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.testHashCode" />
         <item itemvalue="JUnit.MainTest.TestreadLine" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.BookmarkManagerTest.testGetBookmark" />
         <item itemvalue="JUnit.MainTest.testBookmarkgeneration" />
-        <item itemvalue="JUnit.BookmarkTest.testhashCode" />
       </list>
     </recent_temporary>
   </component>
@@ -170,20 +170,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00040" summary="+loadBookmarkManager">
-      <created>1623112257309</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1623112257309</updated>
-    </task>
-    <task id="LOCAL-00041" summary="+ensureThatBookmarkMangerCanNotBeSaved1">
-      <created>1623159459642</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1623159459642</updated>
     </task>
     <task id="LOCAL-00042" summary="+ensureThatBookmarkMangerCanNotBeSaved2">
       <created>1623160076525</created>
@@ -514,7 +500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623340711996</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="+refactor">
+      <created>1623340967739</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1623340967739</updated>
+    </task>
+    <task id="LOCAL-00090" summary="+TestReadLine">
+      <created>1623341113649</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1623341113649</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +533,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ensureThatBackupHasBeenCreated" />
     <MESSAGE value="+generateBackUp" />
     <MESSAGE value="+ensureThatBackupHasBeenCreated2" />
     <MESSAGE value="+reformat Code" />
@@ -547,7 +546,6 @@
     <MESSAGE value="+refactoring" />
     <MESSAGE value="+ensureDomainCanNotBeExtracted2" />
     <MESSAGE value="+ensureDomainCanNotBeExtracted3" />
-    <MESSAGE value="+refactor" />
     <MESSAGE value="+ensureDomainCanBeExtracted2" />
     <MESSAGE value="+ensureThatBookmarkAreNotSortedByDate2" />
     <MESSAGE value="+MainTest" />
@@ -558,6 +556,8 @@
     <MESSAGE value="+generateBookmark" />
     <MESSAGE value="+testGetBookmark" />
     <MESSAGE value="+getBookmark" />
-    <option name="LAST_COMMIT_MESSAGE" value="+getBookmark" />
+    <MESSAGE value="+refactor" />
+    <MESSAGE value="+TestReadLine" />
+    <option name="LAST_COMMIT_MESSAGE" value="+TestReadLine" />
   </component>
 </project>

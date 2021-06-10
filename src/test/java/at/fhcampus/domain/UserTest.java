@@ -9,6 +9,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -437,6 +440,31 @@ class UserTest {
             fail();
         }
     }
+
+
+    @Test
+    public void testHashCode() {
+        // Arrange
+       User user=new User();
+        String username="test";
+        int backupNr=2;
+        BookmarkManager bookmarkManager =new BookmarkManager();
+
+        user.setUsername(username);
+        user.setBackUpNr(backupNr);
+        user.setBookmarkManager(bookmarkManager);
+
+        int expectedValue= Objects.hash(username, bookmarkManager, backupNr);
+
+        // Act
+        int actualValue =user.hashCode();
+
+        // Assert
+        assertEquals(actualValue, expectedValue);
+    }
+
+
+
 
 //+test to String equals hash
 
