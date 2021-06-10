@@ -49,20 +49,20 @@ public class User {
         return bookmarkManager;
     }
 
-    public void restoreBookmarks(String fileName) {
-        try {
+    public void restoreBookmarks(String fileName) throws IOException, ClassNotFoundException, Exception {
+
             this.bookmarkManager = loadBookmarkManager(fileName);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+
     }
 
-    public void generateBackUp() {
-        try {
-            saveBookmarkManager(username + "Backup_NR:" + backUpNr);
-            backUpNr++;
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+    public void generateBackUp() throws IOException, ClassNotFoundException, Exception {
+            if(username!=null && !username.equals("")) {
+                saveBookmarkManager(username + "Backup_NR:" + backUpNr);
+                backUpNr++;
+            }
+            else {
+                throw new NullPointerException("username is null");
+            }
+
     }
 }

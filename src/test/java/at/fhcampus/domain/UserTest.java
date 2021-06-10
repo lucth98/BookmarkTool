@@ -324,6 +324,21 @@ class UserTest {
 
 
     @Test
+    public void ensureThatBackupHasNotBeenCreated() {
+        // Arrange
+        User user = new User();
+        String username = null;
+
+        user.setUsername(username);
+
+        // Act & Assert
+
+        NullPointerException nullPointerException = assertThrows(NullPointerException.class, () -> {
+            user.generateBackUp();
+        });
+    }
+
+    @Test
     public void ensureThatBackupNumberHasIncreast() {
         // Arrange
         User user = new User();
@@ -342,6 +357,8 @@ class UserTest {
             fail();
         }
     }
+
+
 
 //
 //
