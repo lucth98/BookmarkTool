@@ -1329,6 +1329,24 @@ class BookmarkManagerTest {
             bookmarkManager.getBookmark(null);});
     }
 
+
+    @Test
+    public void testGetNoBookmark3() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/test";
+
+        Bookmark expectedResult= new Bookmark(url);
+        Bookmark actualResult=null;
+        Bookmark bookmark1 = new Bookmark(url);
+
+        bookmarkManager.getBookmarkArrayList().add(bookmark1);
+
+        // Act & Assert
+        NoSuchElementException noSuchElementException = assertThrows(NoSuchElementException.class, () -> {
+            bookmarkManager.getBookmark("");});
+    }
+
     @Test
     public void testGetBookmark2() {
         // Arrange
