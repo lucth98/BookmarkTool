@@ -463,10 +463,33 @@ class UserTest {
         assertEquals(actualValue, expectedValue);
     }
 
+    @Test
+    public void testTowBookmarksareEqual() {
+        // Arrange
+        User actualValue=new User();
+        User expectedValue=new User();
+        String username="test";
+        int backupNr=2;
+        BookmarkManager bookmarkManager =new BookmarkManager();
+
+        actualValue.setUsername(username);
+        actualValue.setBackUpNr(backupNr);
+        actualValue.setBookmarkManager(bookmarkManager);
+
+        expectedValue.setUsername(username);
+        expectedValue.setBookmarkManager(bookmarkManager);
+        expectedValue.setBackUpNr(backupNr);
+        // Act & Assert
+        assertEquals(actualValue, expectedValue);
+    }
 
 
 
-//+test to String equals hash
+
+
+
+
+//+test to String equals
 
 //
 //
