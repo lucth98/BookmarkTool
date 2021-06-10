@@ -28,7 +28,7 @@ public class Main {
             String input="";
             input = readLine("Please Type url for Bookmark:");
             user.getBookmarkManager().addBookmark(input);
-            System.out.println(user.getBookmarkManager().getBookmarkArrayList());
+       //     System.out.println(user.getBookmarkManager().getBookmarkArrayList());
             return user.getBookmarkManager().getBookmark(input);
     }
 
@@ -38,7 +38,7 @@ public class Main {
         do {
             System.out.println(message);
             input=scanner.nextLine();
-            System.out.println(input);
+        //    System.out.println(input);
 
         }while (input.equals(""));
         return input;

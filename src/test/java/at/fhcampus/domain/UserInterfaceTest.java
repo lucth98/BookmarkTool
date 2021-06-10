@@ -5,7 +5,9 @@ import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.io.PrintStream;
 import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -165,11 +167,51 @@ class UserInterfaceTest {
             System.setIn(inputStream);
             System.out.println(actualResult);
         }
-
-
-
     }
 
+
+
+
+
+    @Test
+    public void TestReadLineOutput() {
+        // Arrange
+
+        final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        final PrintStream originalPrintStream = System.out;
+
+        Main main=new Main();
+
+        String expectedResult="test";
+        String actualResult="";
+
+        String data = expectedResult+"\r\n";
+        InputStream inputStream = System.in;
+        try {
+
+            System.setOut(new PrintStream(byteArrayOutputStream));
+            System.setIn(new ByteArrayInputStream(data.getBytes()));
+
+            // Act
+            expectedResult= "testing";
+            main.readLine(expectedResult);
+            actualResult=byteArrayOutputStream.toString().replaceAll("\\s", "");
+            expectedResult.replaceAll("\\s", "");
+
+            assertEquals(expectedResult,actualResult);
+        } catch (Exception e){
+            System.setIn(inputStream);
+            System.setOut(originalPrintStream);
+            System.out.println(e);
+            fail();
+        }
+        finally {
+            System.setIn(inputStream);
+            System.setOut(originalPrintStream);
+            System.out.println(actualResult);
+            System.out.println(expectedResult);
+        }
+    }
 
 
 
