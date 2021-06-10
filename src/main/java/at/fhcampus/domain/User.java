@@ -1,9 +1,10 @@
 package at.fhcampus.domain;
 
-import org.mockito.Spy;
 
 import java.io.*;
 import java.util.Objects;
+
+
 
 public class User {
     private String username = "";
@@ -33,11 +34,11 @@ public class User {
         this.username = username;
     }
 
+
     public void saveBookmarkManager(String fileName) throws IOException, ClassNotFoundException, Exception {
 
         FileOutputStream fileOutputStream = new FileOutputStream(fileName);
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-        // spyedObjectOutputStream =(objectOutputStream);
         objectOutputStream.writeObject(this.bookmarkManager);
         objectOutputStream.flush();
         objectOutputStream.close();
@@ -48,7 +49,6 @@ public class User {
     public BookmarkManager loadBookmarkManager(String fileName) throws IOException, ClassNotFoundException, Exception {
         FileInputStream fileInputStream = new FileInputStream(fileName);
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-        // spyedObjectInputStream=(objectInputStream);
         BookmarkManager bookmarkManager = (BookmarkManager) objectInputStream.readObject();
         objectInputStream.close();
         return bookmarkManager;

@@ -1,23 +1,14 @@
 package at.fhcampus.domain;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
-import org.mockito.junit.MockitoJUnitRunner;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
-import static org.mockito.Mockito.*;
 
-@RunWith(MockitoJUnitRunner.class)
 class UserInterfaceTest {
 
 
@@ -214,51 +205,6 @@ class UserInterfaceTest {
             System.out.println(expectedResult);
         }
     }
-//
-//    @Test
-//    public void TestMenu1(){
-//        // Arrange
-//            Main main=new Main();
-//            User user=new User();
-//            String username ="testUser";
-//            user.setUsername(username);
-//
-//
-//
-//        BookmarkManager bookmarkManager = new BookmarkManager();
-//        List<Bookmark> expectedResult = new ArrayList<>();
-//        String url = "http://test.com/Test";
-//        expectedResult.add(new Bookmark(url));
-//        // Act
-//        bookmarkManager.addBookmark(url);
-//        List<Bookmark> actualResult = null;
-//
-//        String input="1";
-//
-//        String data = input+"\r\n";
-//        InputStream inputStream = System.in;
-//        try {
-//            System.setIn(new ByteArrayInputStream(data.getBytes()));
-//
-//            // Act
-//           int result =main.menu(user);
-//           actualResult=user.getBookmarkManager().getBookmarkArrayList();
-//
-//            //Assert
-//
-//            assertIterableEquals(expectedResult,actualResult);
-//            assertEquals(input,result);
-//
-//        } catch (Exception e){
-//            System.setIn(inputStream);
-//            System.out.println(e);
-//            fail();
-//        }
-//        finally {
-//            System.setIn(inputStream);
-//            System.out.println(actualResult);
-//        }
-//
-//    }
+
 
 }

@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-
-    }
+//    public static void main(String[] args) {
+//
+//    }
 
     //test if scanner cann be set
     public String read(){

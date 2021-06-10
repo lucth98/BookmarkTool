@@ -1,7 +1,6 @@
 package at.fhcampus.domain;
 
 import org.junit.jupiter.api.*;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;

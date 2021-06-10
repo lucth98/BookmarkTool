@@ -1,23 +1,13 @@
 package at.fhcampus.domain;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mockito;
-import org.mockito.junit.MockitoJUnitRunner;
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-//import static org.mockito.Mockito.*;
-
-@RunWith(MockitoJUnitRunner.class)
 class UserTest {
 
     @Test
@@ -630,45 +620,9 @@ class UserTest {
 
 
 
-//+test to String equals
 
-//
-//
-//    @Test
-//    public void testThatStreamClosesSaving() {
-//        User user =new User();
-//
-//
-//        BookmarkManager bookmarkManager =user.getBookmarkManager();
-//
-//        String url1 = "http://test.com/Test";
-//        String url2 = "http://tester.com/Test";
-//        String tag1 = "test";
-//        String tag2 = "tester";
-//
-//
-//        Bookmark bookmark1 =new Bookmark(url1,tag1);
-//        Bookmark bookmark2 =new Bookmark(url2,tag2);
-//
-//        bookmarkManager.getBookmarkArrayList().add(bookmark1);
-//        bookmarkManager.getBookmarkArrayList().add(bookmark2);
-//
-//        String fileName="newFile.txt";
-//        // Act &  Assert
-//
-//        try {
-//
-//
-//            user.saveBookmarkManager(fileName);
-//            ObjectOutputStream result =user.getSpyedObjectOutputStream();
-//
-//         verify(user.spyedObjectOutputStream,times(1)).close();
-//
-//        }catch (Exception e){
-//            System.out.println(e);
-//            fail();
-//        }
-//    }
+
+
 
 
 }
