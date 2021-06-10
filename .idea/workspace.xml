@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBackupNumberHasIncreast">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/User.java" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBackupHasNotBeenCreated2">
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.ensureThatBackupHasNotBeenCreated2">
+  <component name="RunManager" selected="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeRestored">
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -133,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.ensureThatBackupNumberHasIncreast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.ensureThatBookmarkMangerCanNotBeRestored" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -143,7 +141,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.UserTest" />
-      <option name="METHOD_NAME" value="ensureThatBackupNumberHasIncreast" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkMangerCanNotBeRestored" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerCanNotBeRestored" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasNotBeenCreated2" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasNotBeenCreated" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasNorBeenCreated" />
-        <item itemvalue="JUnit.UserTest.ensureThatBackupNumberHasIncreast" />
       </list>
     </recent_temporary>
   </component>
@@ -171,20 +169,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00017" summary="+ Test ensureThatTakCanBeRemoved">
-      <created>1621189231839</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1621189231839</updated>
-    </task>
-    <task id="LOCAL-00018" summary="+ Test ensureThatTakCanBeRemoved">
-      <created>1621189289598</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1621189289598</updated>
     </task>
     <task id="LOCAL-00019" summary="+ removeTagFromBookmark">
       <created>1621190516770</created>
@@ -515,7 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623278301451</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="+ensureThatBackupHasNotBeenCreated">
+      <created>1623329150331</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1623329150331</updated>
+    </task>
+    <task id="LOCAL-00067" summary="+ensureThatBackupHasNotBeenCreated2">
+      <created>1623329258721</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1623329258721</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,8 +532,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ensureThatBookmarkmangerCanBeLoaded" />
-    <MESSAGE value="+loadBookmarkManager" />
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeSaved1" />
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeSaved2" />
     <MESSAGE value="+ensureThatBookmarkMangerCanNotBeLoaded1" />
@@ -559,6 +555,8 @@
     <MESSAGE value="+reformat Code" />
     <MESSAGE value="+testhashCode" />
     <MESSAGE value="+ensureThatBackupNumberHasIncreast" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBackupNumberHasIncreast" />
+    <MESSAGE value="+ensureThatBackupHasNotBeenCreated" />
+    <MESSAGE value="+ensureThatBackupHasNotBeenCreated2" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBackupHasNotBeenCreated2" />
   </component>
 </project>

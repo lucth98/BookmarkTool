@@ -246,6 +246,37 @@ class UserTest {
     }
 
     @Test
+    public void ensureThatBookmarkMangerCanNotBeRestored() {
+        // Arrange
+        User user = new User();
+        User newuser = new User();
+
+        BookmarkManager expectedResult = user.getBookmarkManager();
+        BookmarkManager actualResult;
+
+
+        String url1 = "http://test.com/Test";
+        String url2 = "http://tester.com/Test";
+        String tag1 = "test";
+        String tag2 = "tester";
+
+        Bookmark bookmark1 = new Bookmark(url1, tag1);
+        Bookmark bookmark2 = new Bookmark(url2, tag2);
+
+        expectedResult.getBookmarkArrayList().add(bookmark1);
+        expectedResult.getBookmarkArrayList().add(bookmark2);
+
+        String fileName = null;
+        // Act
+
+
+        NullPointerException nullPointerException = assertThrows(NullPointerException.class, () -> {
+            user.restoreBookmarks(fileName);
+        });
+    }
+
+
+    @Test
     public void ensureThatBackupHasBeenCreated() {
         // Arrange
         User user = new User();
