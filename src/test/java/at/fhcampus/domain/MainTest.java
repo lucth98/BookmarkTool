@@ -85,10 +85,59 @@ class MainTest {
             System.setIn(inputStream);
             System.out.println(actualResult);
         }
+    }
+
+
+
+
+
+    @Test
+    public void testBookmarkgeneration(){
+        // Arrange
+
+        Main main=new Main();
+        User user=new User();
+        user.setUsername("test");
+
+
+        String url = "https://test.com/Test";
+
+        String scannerInput=url;
+
+        String actualResult="";
+        String expectedResult=url;
+
+        Bookmark bookmark=null;
+
+
+        String data = scannerInput+"\r\n"+"blablabla"+"\n";
+        InputStream inputStream = System.in;
+        try {
+            System.setIn(new ByteArrayInputStream(data.getBytes()));
+
+            // Act
+            bookmark =main.generateBookmark(user,url);
+            actualResult=bookmark.getUrl();
+            //Assert
+
+            assertEquals(expectedResult,actualResult);
+
+        } catch (Exception e){
+            System.setIn(inputStream);
+            System.out.println(actualResult);
+            System.out.println(e);
+            fail();
+        }
+        finally {
+            System.setIn(inputStream);
+            System.out.println(actualResult);
+        }
 
 
 
     }
+
+
 
 
 

@@ -28,4 +28,9 @@ public class Main {
         return user;
 
     }
+
+
+    public Bookmark generateBookmark(User user, String url) {
+        return null;
+    }
 }
