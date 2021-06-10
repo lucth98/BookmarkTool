@@ -16,16 +16,8 @@ public class Main {
     }
 
     public User generateUser() {
-        Scanner scanner =new Scanner(System.in);
         User user=new User();
-        String input="";
-        do {
-            System.out.println("Please Type username:");
-            input=scanner.nextLine();
-
-            System.out.println(input);
-        }while (input.equals(""));
-
+        String input=readLine("Please Type username:");
         user.setUsername(input);
         return user;
 
@@ -33,22 +25,22 @@ public class Main {
 
 
     public Bookmark generateBookmark(User user)throws NoSuchElementException {
-
-            Scanner scanner =new Scanner(System.in);
-
             String input="";
-            do {
-                System.out.println("Please Type url for Bookmark:");
-                input=scanner.nextLine();
-                System.out.println(input);
-
-            }while (input.equals(""));
+            input = readLine("Please Type url for Bookmark:");
             user.getBookmarkManager().addBookmark(input);
             System.out.println(user.getBookmarkManager().getBookmarkArrayList());
-
-
             return user.getBookmarkManager().getBookmark(input);
+    }
 
+    private String readLine(String message) {
+        Scanner scanner =new Scanner(System.in);
+        String input;
+        do {
+            System.out.println(message);
+            input=scanner.nextLine();
+            System.out.println(input);
 
+        }while (input.equals(""));
+        return input;
     }
 }

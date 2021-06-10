@@ -1295,6 +1295,6 @@ class BookmarkManagerTest {
         }
 
 
-    }
+    }//+more  testGetBookmark() test cases
 
 }
