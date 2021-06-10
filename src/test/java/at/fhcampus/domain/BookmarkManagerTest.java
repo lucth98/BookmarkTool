@@ -1293,9 +1293,8 @@ class BookmarkManagerTest {
             System.out.println(e);
             fail();
         }
-
-
     }
+
     @Test
     public void testGetNoBookmark() {
         // Arrange
@@ -1311,9 +1310,33 @@ class BookmarkManagerTest {
         // Act & Assert
             NoSuchElementException noSuchElementException = assertThrows(NoSuchElementException.class, () -> {
                 bookmarkManager.getBookmark("http://tester.com/test");});
-
-
-
     }
+
+
+    @Test
+    public void testGetBookmark2() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/test";
+
+        Bookmark expectedResult= new Bookmark(url);
+        Bookmark actualResult=null;
+        Bookmark bookmark1 = new Bookmark(url);
+
+        bookmarkManager.getBookmarkArrayList().add(bookmark1);
+
+        // Act
+        try {
+            actualResult = bookmarkManager.getBookmark(url.toUpperCase(Locale.ROOT));
+            // Assert
+
+
+            assertEquals(expectedResult, actualResult);
+        }catch (Exception e){
+            System.out.println(e);
+            fail();
+        }
+    }
+
 
 }
