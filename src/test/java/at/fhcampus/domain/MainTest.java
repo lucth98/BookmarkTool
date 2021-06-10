@@ -116,7 +116,7 @@ class MainTest {
             System.setIn(new ByteArrayInputStream(data.getBytes()));
 
             // Act
-            bookmark =main.generateBookmark(user,url);
+            bookmark =main.generateBookmark(user);
             actualResult=bookmark.getUrl();
             //Assert
 

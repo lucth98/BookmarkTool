@@ -150,8 +150,15 @@ public class BookmarkManager implements Serializable {
         return Objects.hash(getBookmarkArrayList());
     }
 
-    public Bookmark getBookmark(String input) {
+    public Bookmark getBookmark(String url) throws NoSuchElementException{
+        for (Bookmark bookmark:bookmarkArrayList) {
 
-        return null;
+            if(bookmark.getUrl().equalsIgnoreCase(url)){
+                return bookmark;
+            }
+
+        }
+
+        throw new NoSuchElementException();
     }
 }
