@@ -7,7 +7,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Locale;
+
 import java.io.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -155,7 +155,7 @@ class UserTest {
         expectedResult.getBookmarkArrayList().add(bookmark1);
         expectedResult.getBookmarkArrayList().add(bookmark2);
 
-        String fileName = "testfile.txt";
+        String fileName = "testFile.txt";
         // Act
 
         try {
@@ -211,7 +211,7 @@ class UserTest {
     public void ensureThatBookmarkMangerCanBeRestored() {
         // Arrange
         User user = new User();
-        User newuser = new User();
+        User newUser = new User();
 
         BookmarkManager expectedResult = user.getBookmarkManager();
         BookmarkManager actualResult;
@@ -233,8 +233,8 @@ class UserTest {
 
         try {
             user.saveBookmarkManager(fileName);
-            newuser.restoreBookmarks(fileName);
-            actualResult = newuser.getBookmarkManager();
+            newUser.restoreBookmarks(fileName);
+            actualResult = newUser.getBookmarkManager();
             //Assert
             assertEquals(expectedResult, actualResult);
 
@@ -379,7 +379,7 @@ class UserTest {
     }
 
     @Test
-    public void ensureThatBackupNumberHasIncreast() {
+    public void ensureThatBackupNumberHasIncreased() {
         // Arrange
         User user = new User();
         String username = "newTestUser";
@@ -403,7 +403,7 @@ class UserTest {
 //
 //
 //    @Test
-//    public void testThatStreamClosesSaveing() {
+//    public void testThatStreamClosesSaving() {
 //        User user =new User();
 //
 //
@@ -421,7 +421,7 @@ class UserTest {
 //        bookmarkManager.getBookmarkArrayList().add(bookmark1);
 //        bookmarkManager.getBookmarkArrayList().add(bookmark2);
 //
-//        String fileName="newfile.txt";
+//        String fileName="newFile.txt";
 //        // Act &  Assert
 //
 //        try {
