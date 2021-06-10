@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureDomainCanBeExtracted2">
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureThatBookmarkAreNotSortedByDate2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,13 +167,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00030" summary="+ repaired equals">
-      <created>1621336578104</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1621336578104</updated>
     </task>
     <task id="LOCAL-00031" summary="- toString">
       <created>1621337052711</created>
@@ -513,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623333815824</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="+ensureThatBookmarkAreNotSortedByDate2">
+      <created>1623334680186</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1623334680186</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +530,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals2" />
     <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals3" />
     <MESSAGE value="+ensureThatUserCanNotAddOneTagToBookmark1" />
     <MESSAGE value="+ensureThatUserCanNotAddOneTagToBookmark2" />
@@ -557,6 +554,7 @@
     <MESSAGE value="+ensureDomainCanNotBeExtracted3" />
     <MESSAGE value="+refactor" />
     <MESSAGE value="+ensureDomainCanBeExtracted2" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ensureDomainCanBeExtracted2" />
+    <MESSAGE value="+ensureThatBookmarkAreNotSortedByDate2" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ensureThatBookmarkAreNotSortedByDate2" />
   </component>
 </project>
