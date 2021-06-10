@@ -38,13 +38,31 @@ public class Main {
         do {
             System.out.println(message);
             input=scanner.nextLine();
-        //    System.out.println(input);
+        //  System.out.println(input);
 
-        }while (input.equals(""));
+        }while (!input.equals(""));
         return input;
     }
 
-    public int menu(User user) {
-        return 0;
-    }
+//    public String menu(User user) {
+//        String input =readLine("1:save Url ;2:delete Url;3;$");
+//        String arguments=readLine("please write URL");;
+//        switch (input){
+//            case "1":
+//                 //arguments =readLine("please write URL");
+//                user.getBookmarkManager().addBookmark(arguments);
+//
+//                break;
+//            case "2":
+//               //  arguments =readLine("please write URL");
+//                user.getBookmarkManager().removeBookmark(arguments);
+//                break;
+//
+//
+//        }
+//
+//
+//
+//        return input;
+//    }
 }
