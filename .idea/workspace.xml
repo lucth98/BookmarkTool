@@ -68,7 +68,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.testGetBookmark2">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.testGetNoBookmark2">
     <configuration name="BookmarkManagerTest.testGetBookmark2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -101,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookmarkManagerTest.testGetNoBookmark2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -110,8 +110,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="testGetNoBookmark2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.testGetNoBookmark2" />
         <item itemvalue="JUnit.BookmarkManagerTest.testGetBookmark2" />
         <item itemvalue="JUnit.BookmarkManagerTest.testGetNoBookmark" />
         <item itemvalue="JUnit.UserInterfaceTest" />
         <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.BookmarkTest" />
       </list>
     </recent_temporary>
   </component>
