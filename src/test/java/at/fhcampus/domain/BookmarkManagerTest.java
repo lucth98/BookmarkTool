@@ -1253,7 +1253,7 @@ class BookmarkManagerTest {
     }
 
     @Test
-    public void testhashCode() {
+    public void testHashCode() {
         // Arrange
         BookmarkManager bookmarkManager=new BookmarkManager();
 
@@ -1268,6 +1268,24 @@ class BookmarkManagerTest {
         int actualValue =bookmarkManager.hashCode();
         // Assert
         assertEquals(actualValue, expectedValue);
+    }
+
+    @Test
+    public void testGetBookmark() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url = "http://test.com/test";
+
+        Bookmark expectedResult= new Bookmark(url);
+        Bookmark actualResult=null;
+        Bookmark bookmark1 = new Bookmark(url);
+
+
+        // Act
+        actualResult=bookmarkManager.getBookmark(url);
+
+        // Assert
+        assertEquals(expectedResult, actualResult);
     }
 
 }
