@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+refactor">
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+ensureDomainCanBeExtracted2">
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureDomainCanBeExtracted2">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureThatBookmarkAreNotSortedByDate2">
     <configuration name="BookmarkManagerTest.ensureDomainCanBeExtracted2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -85,22 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkManagerTest.ensureDomainCanNotBeExtracted2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BookmarkTool" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.fhcampus.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
-      <option name="METHOD_NAME" value="ensureDomainCanNotBeExtracted2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BookmarkManagerTest.ensureDomainCanNotBeExtracted3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -112,6 +95,22 @@
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
       <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
       <option name="METHOD_NAME" value="ensureDomainCanNotBeExtracted3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookmarkManagerTest.ensureThatBookmarkAreNotSortedByDate2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookmarkTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.fhcampus.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureThatBookmarkAreNotSortedByDate2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureThatBookmarkAreNotSortedByDate2" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanBeExtracted2" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasBeenCreated2" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanNotBeExtracted3" />
-        <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanNotBeExtracted2" />
       </list>
     </recent_temporary>
   </component>
@@ -170,13 +169,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00029" summary="sorting by date test case">
-      <created>1621295814218</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1621295814218</updated>
     </task>
     <task id="LOCAL-00030" summary="+ repaired equals">
       <created>1621336578104</created>
@@ -514,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623333291098</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="+ensureDomainCanBeExtracted2">
+      <created>1623333815824</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1623333815824</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +532,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals1" />
     <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals2" />
     <MESSAGE value="+testThatTowBookmarkMangersAreNotEquals3" />
     <MESSAGE value="+ensureThatUserCanNotAddOneTagToBookmark1" />
@@ -558,6 +556,7 @@
     <MESSAGE value="+ensureDomainCanNotBeExtracted2" />
     <MESSAGE value="+ensureDomainCanNotBeExtracted3" />
     <MESSAGE value="+refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="+refactor" />
+    <MESSAGE value="+ensureDomainCanBeExtracted2" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ensureDomainCanBeExtracted2" />
   </component>
 </project>
