@@ -19,9 +19,10 @@ public class Main {
         User user=new User();
         String input="";
         do {
+            System.out.println("Please Type username:");
             input=scanner.nextLine();
-            System.out.println(input);
 
+            System.out.println(input);
         }while (input.equals(""));
 
         user.setUsername(input);
@@ -30,7 +31,22 @@ public class Main {
     }
 
 
-    public Bookmark generateBookmark(User user, String url) {
-        return null;
+    public Bookmark generateBookmark(User user) {
+
+            Scanner scanner =new Scanner(System.in);
+
+            String input="";
+            do {
+                System.out.println("Please Type url for Bookmark:");
+                input=scanner.nextLine();
+                System.out.println(input);
+
+            }while (input.equals(""));
+            user.getBookmarkManager().addBookmark(input);
+
+
+            return user.getBookmarkManager().getBookmark(input);
+
+
     }
 }

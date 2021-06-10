@@ -149,4 +149,9 @@ public class BookmarkManager implements Serializable {
     public int hashCode() {
         return Objects.hash(getBookmarkArrayList());
     }
+
+    public Bookmark getBookmark(String input) {
+
+        return null;
+    }
 }

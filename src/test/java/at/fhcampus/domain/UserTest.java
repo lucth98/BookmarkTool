@@ -438,7 +438,7 @@ class UserTest {
         }
     }
 
-
+//+test to String equals hash
 
 //
 //
