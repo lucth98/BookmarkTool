@@ -43,4 +43,8 @@ public class Main {
         }while (input.equals(""));
         return input;
     }
+
+    public int menu(User user) {
+        return 0;
+    }
 }
