@@ -61,7 +61,7 @@ public class User {
                 backUpNr++;
             }
             else {
-                throw new NullPointerException("username is null");
+                throw new NullPointerException("username does not exist");
             }
 
     }
