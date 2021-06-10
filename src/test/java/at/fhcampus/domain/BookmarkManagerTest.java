@@ -1311,6 +1311,7 @@ class BookmarkManagerTest {
             NoSuchElementException noSuchElementException = assertThrows(NoSuchElementException.class, () -> {
                 bookmarkManager.getBookmark("http://tester.com/test");});
     }
+
     @Test
     public void testGetNoBookmark2() {
         // Arrange
@@ -1328,7 +1329,6 @@ class BookmarkManagerTest {
             bookmarkManager.getBookmark(null);});
     }
 
-
     @Test
     public void testGetBookmark2() {
         // Arrange
@@ -1345,7 +1345,6 @@ class BookmarkManagerTest {
         try {
             actualResult = bookmarkManager.getBookmark(url.toUpperCase(Locale.ROOT));
             // Assert
-
 
             assertEquals(expectedResult, actualResult);
         }catch (Exception e){
