@@ -1,5 +1,6 @@
 package at.fhcampus.domain;
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Main {
@@ -31,7 +32,7 @@ public class Main {
     }
 
 
-    public Bookmark generateBookmark(User user) {
+    public Bookmark generateBookmark(User user)throws NoSuchElementException {
 
             Scanner scanner =new Scanner(System.in);
 
@@ -43,6 +44,7 @@ public class Main {
 
             }while (input.equals(""));
             user.getBookmarkManager().addBookmark(input);
+            System.out.println(user.getBookmarkManager().getBookmarkArrayList());
 
 
             return user.getBookmarkManager().getBookmark(input);

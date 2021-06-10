@@ -100,7 +100,7 @@ class MainTest {
         user.setUsername("test");
 
 
-        String url = "https://test.com/Test";
+        String url = "https://test.com/test";
 
         String scannerInput=url;
 

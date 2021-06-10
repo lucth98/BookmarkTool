@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+testGetBookmark">
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/BookmarkManager.java" afterDir="false" />
+    <list default="true" id="a745254f-c4bd-4d8d-abe5-710c0b06bcdf" name="Default Changelist" comment="+getBookmark">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/fhcampus/domain/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/BookmarkManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/fhcampus/domain/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkTest.testhashCode">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.testGetBookmark">
     <configuration name="BookmarkManagerTest.testGetBookmark" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -151,9 +153,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookmarkTest.testhashCode" />
         <item itemvalue="JUnit.BookmarkManagerTest.testGetBookmark" />
         <item itemvalue="JUnit.MainTest.testBookmarkgeneration" />
+        <item itemvalue="JUnit.BookmarkTest.testhashCode" />
         <item itemvalue="JUnit.MainTest.testUserCreation" />
         <item itemvalue="JUnit.MainTest.testIfScannerCannBeSet" />
       </list>
@@ -171,13 +173,6 @@
       <option name="presentableId" value="Default" />
       <updated>1620298261517</updated>
       <workItem from="1620394519643" duration="25593000" />
-    </task>
-    <task id="LOCAL-00038" summary="+ensureThatBookmarkmangerCanBeLoaded">
-      <created>1623086041990</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1623086041990</updated>
     </task>
     <task id="LOCAL-00039" summary="+loadBookmarkManager">
       <created>1623086373021</created>
@@ -515,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623339756287</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="+getBookmark">
+      <created>1623340266035</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1623340266035</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +536,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ensureThatBookmarkMangerHasBeSaved" />
     <MESSAGE value="+ensureThatBackupHasBeenCreated" />
     <MESSAGE value="+generateBackUp" />
     <MESSAGE value="+ensureThatBackupHasBeenCreated2" />
@@ -559,6 +560,7 @@
     <MESSAGE value="+testBookmarkgeneration" />
     <MESSAGE value="+generateBookmark" />
     <MESSAGE value="+testGetBookmark" />
-    <option name="LAST_COMMIT_MESSAGE" value="+testGetBookmark" />
+    <MESSAGE value="+getBookmark" />
+    <option name="LAST_COMMIT_MESSAGE" value="+getBookmark" />
   </component>
 </project>

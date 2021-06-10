@@ -1280,10 +1280,14 @@ class BookmarkManagerTest {
         Bookmark actualResult=null;
         Bookmark bookmark1 = new Bookmark(url);
 
+        bookmarkManager.getBookmarkArrayList().add(bookmark1);
+
         // Act
         try {
             actualResult = bookmarkManager.getBookmark(url);
             // Assert
+
+
             assertEquals(expectedResult, actualResult);
         }catch (Exception e){
             System.out.println(e);
