@@ -67,7 +67,7 @@
       <command value="mvn test jacoco:report  org.pitest:pitest-maven:mutationCoverage" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureDomainCanNotBeExtracted2">
+  <component name="RunManager" selected="JUnit.BookmarkManagerTest.ensureDomainCanNotBeExtracted3">
     <configuration name="BookmarkManagerTest.ensureDomainCanNotBeExtracted2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
@@ -84,7 +84,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookmarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookmarkManagerTest.ensureDomainCanNotBeExtracted3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BookmarkTool" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +93,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="at.fhcampus.domain" />
-      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="at.fhcampus.domain.BookmarkManagerTest" />
+      <option name="METHOD_NAME" value="ensureDomainCanNotBeExtracted3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanNotBeExtracted3" />
         <item itemvalue="JUnit.BookmarkManagerTest.ensureDomainCanNotBeExtracted2" />
         <item itemvalue="JUnit.UserTest.ensureThatBackupHasBeenCreated2" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserTest.ensureThatBookmarkMangerHasBeSaved" />
-        <item itemvalue="JUnit.BookmarkTest" />
       </list>
     </recent_temporary>
   </component>

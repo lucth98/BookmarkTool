@@ -350,7 +350,16 @@ class BookmarkManagerTest {
         assertNull(actualResult);
     }
 
-
+    @Test
+    public void ensureDomainCanNotBeExtracted3() {
+        // Arrange
+        BookmarkManager bookmarkManager = new BookmarkManager();
+        String url1 = "";
+        // Act
+        String actualResult = bookmarkManager.getDomainName(url1);
+        // Assert
+        assertNull(actualResult);
+    }
 
 
 
